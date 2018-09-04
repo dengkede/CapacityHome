@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/layout_parent"
+    tools:context="com.example.administrator.capacityhome.SetingActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x112"
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:id="@+id/relayout_imgBack"
+            android:layout_width="@dimen/x120"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="@dimen/x40"
+                android:layout_height="@dimen/x40"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x16"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ljt_black" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="@color/fontcolor_f3"
+            android:textSize="@dimen/x42" />
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x28"
+            android:paddingRight="@dimen/x28"
+            android:text="回复"
+            android:textColor="@color/fontcolor_yellow"
+            android:textSize="@dimen/x28"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x20"
+        android:background="@color/fontcolor_f2" />
+
+    <RelativeLayout
+        android:id="@+id/relayout_update"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x112"
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="检查更新"
+            android:textColor="@color/fontcolor_f3"
+            android:textSize="@dimen/x30" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_toLeftOf="@+id/img_1"
+            android:text="当前版本Ver1.3.5"
+            android:textColor="@color/fontcolor_f9"
+            android:textSize="@dimen/x24" />
+
+        <ImageView
+            android:id="@+id/img_1"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/rjt_hui" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/fontcolor_f2"
+        />
+    <RelativeLayout
+        android:id="@+id/relayout_about"
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x112">
+        <TextView
+            android:textColor="@color/fontcolor_f3"
+            android:textSize="@dimen/x30"
+            android:text="关于我们"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_2"
+            android:textSize="@dimen/x24"
+            android:text="公司简介"
+            android:layout_marginRight="@dimen/x20"
+            android:textColor="@color/fontcolor_f9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/img_2"
+            android:src="@mipmap/rjt_hui"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x20"
+        android:background="@color/fontcolor_f2" />
+    <TextView
+        android:id="@+id/tv_loginOut"
+        android:layout_marginLeft="@dimen/x28"
+        android:layout_marginRight="@dimen/x28"
+        android:background="@drawable/laundy_rect_yellow_80"
+        android:gravity="center"
+        android:text="更换账号"
+        android:layout_marginTop="@dimen/x48"
+        android:textSize="@dimen/x30"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x80" />
+</LinearLayout>

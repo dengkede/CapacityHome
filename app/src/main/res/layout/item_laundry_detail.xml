@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/x28"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x112">
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_doubt_state"
+            android:layout_alignParentLeft="true"
+            android:textColor="#bf3000"
+            android:textSize="@dimen/x26"
+            android:text="[未回复]"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:maxWidth="@dimen/x450"
+            android:layout_centerVertical="true"
+            android:textColor="@color/fontcolor_f9"
+            android:layout_marginLeft="@dimen/x8"
+            android:layout_toRightOf="@+id/tv_doubt_state"
+            android:textSize="@dimen/x26"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="衣服被其它颜色侵染，服务商应该赔偿"
+            android:id="@+id/tv_doubt_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_doubt_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x4"
+        android:layout_toRightOf="@+id/tv_doubt_content"
+        android:text="[附件]"
+        android:layout_toLeftOf="@+id/img1"
+        android:textColor="#06AEC9"
+        android:textSize="@dimen/x26" />
+        <ImageView
+            android:layout_marginRight="@dimen/x19"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/img1"
+            android:src="@mipmap/rjt_hui"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30" />
+    <View
+        android:layout_marginRight="@dimen/x28"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/fontcolor_f2"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

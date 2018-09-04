@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/popsimple_write_rect"
+    android:padding="@dimen/x20"
+    android:layout_height="match_parent">
+<!--必须确定-->
+
+<LinearLayout
+    android:layout_above="@+id/tv_agree"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:progressDrawable="@drawable/pg" />
+    <TextView
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/tv_titles"
+        android:textSize="14sp"
+        android:layout_marginTop="@dimen/x32"
+        android:layout_alignParentTop="true"
+        android:textColor="#222222"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:visibility="gone"
+        android:lineSpacingExtra = "@dimen/x15"
+        android:layout_below="@+id/tv_titles"
+        android:layout_marginTop="@dimen/x52"
+        android:id="@+id/tv_content"
+        android:textSize="14sp"
+        android:textColor="@color/fontcolor_f6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <WebView
+        android:scrollbars="none"
+        android:id="@+id/webView"
+        android:layout_below="@+id/tv_titles"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></WebView>
+</LinearLayout>
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:text="同意"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:paddingLeft="@dimen/x26"
+        android:paddingRight="@dimen/x26"
+        android:background="@drawable/home_rect_sloid_yellow2"
+        android:id="@+id/tv_agree"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/x26"
+        android:layout_width="wrap_content"
+        android:minWidth="@dimen/x280"
+        android:layout_height="@dimen/x82" />
+</RelativeLayout>

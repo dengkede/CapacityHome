@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relayout_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/title"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lstCameraList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="#DDDDDD"
+            android:dividerHeight="0.5dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnLogou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_add_dev"
+        android:gravity="center"
+        android:text="注销"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnLogou"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_add_dev"
+        android:gravity="center"
+        android:text="设备添加"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+
+    <Button
+        android:id="@+id/toShowPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+<LinearLayout
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_toptitle2" />
+
+    <com.chanven.lib.cptr.PtrClassicFrameLayout
+        android:id="@+id/pcf_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ListView
+            android:footerDividersEnabled="false"
+            android:paddingBottom="@dimen/x20"
+            android:id="@+id/grid_smartHomeList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:clipToPadding="false"
+          ></ListView>
+    </com.chanven.lib.cptr.PtrClassicFrameLayout>
+    <include layout="@layout/layout_empty_data"
+        android:id="@+id/layout_empty"
+        />
+</LinearLayout>
+</RelativeLayout>

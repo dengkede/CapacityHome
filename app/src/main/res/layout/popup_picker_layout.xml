@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    >
+
+    <!--<TextView-->
+        <!--android:id="@+id/pop_head_text"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:text="adsfafas"-->
+        <!--android:background="@color/white"-->
+        <!--android:paddingTop="5dp"-->
+        <!--android:paddingBottom="5dp"-->
+        <!--android:paddingLeft="30dp"-->
+        <!--android:paddingRight="30dp"-->
+        <!--android:textSize="16sp"-->
+        <!--android:visibility="gone"/>-->
+
+    <ListView
+        android:id="@+id/item_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_item_bg_shape"
+        android:divider="@color/fontcolor_f2"
+        android:dividerHeight="@dimen/x1"
+        android:layout_above="@+id/cancel_btn"
+        android:cacheColorHint="#00000000"></ListView>
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/popup_item_bg_shape"
+        android:layout_marginTop="10dp"
+        android:text="取消"
+        android:textColor="@color/fontcolor_f6"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

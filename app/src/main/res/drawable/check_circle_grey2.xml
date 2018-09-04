@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- outer circle -->
+    <item>
+        <shape android:shape="oval" >
+          <stroke
+              android:width="@dimen/x2"
+              android:color="#cccccc"
+              />
+            <size
+                android:height="@dimen/x42"
+                android:width="@dimen/x42" />
+        </shape>
+    </item>
+
+    <!-- center circle -->
+
+
+</layer-list>

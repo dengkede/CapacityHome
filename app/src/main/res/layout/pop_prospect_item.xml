@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x160">
+    <ImageView
+        android:id="@+id/img_pic"
+        android:src="@mipmap/default_iv"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x112" />
+    <LinearLayout
+        android:layout_marginLeft="@dimen/x24"
+        android:layout_marginRight="@dimen/x12"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x112">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x40">
+            <TextView
+                android:id="@+id/tv_title"
+                android:textSize="@dimen/x32"
+                android:textColor="@color/fontcolor_f3"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_totalPrice"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/x32"
+                android:textColor="@color/color_yellow"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:text="小计"
+                android:textSize="@dimen/x20"
+                android:textColor="@color/fontcolor_f9"
+                android:layout_marginRight="@dimen/x3"
+                android:layout_toLeftOf="@+id/tv_totalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/x20"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x54">
+            <TextView
+                android:layout_marginBottom="@dimen/x4"
+                android:id="@+id/tp"
+                android:text="￥"
+                android:textColor="@color/color_yellow"
+                android:textSize="@dimen/x20"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="20"
+                android:id="@+id/tv_price"
+                android:layout_alignParentBottom="true"
+                android:textStyle="bold"
+                android:textColor="@color/color_yellow"
+                android:textSize="@dimen/x32"
+                android:layout_marginLeft="@dimen/x4"
+                android:layout_toRightOf="@+id/tp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginBottom="@dimen/x4"
+                android:id="@+id/tv_price2"
+                android:layout_marginLeft="@dimen/x12"
+                android:layout_toRightOf="@+id/tv_price"
+                android:textSize="@dimen/x20"
+                android:textColor="@color/fontcolor_f9"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_marginBottom="@dimen/x4"
+                android:id="@+id/relayout_jia"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/rect_fangf2"
+                android:layout_width="@dimen/x50"
+                android:layout_height="@dimen/x50">
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/img_jia"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/jia"
+                    android:layout_width="@dimen/x16"
+                    android:layout_height="@dimen/x16" />
+            </RelativeLayout>
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tv_count"
+                android:textColor="@color/color_yellow"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/relayout_jia"
+                android:gravity="center"
+                android:textSize="@dimen/x32"
+                android:layout_width="@dimen/x36"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_marginBottom="@dimen/x4"
+                android:id="@+id/relayout_jian"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/tv_count"
+                android:background="@drawable/rect_fangf2"
+                android:layout_width="@dimen/x50"
+                android:layout_height="@dimen/x50">
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/img_jian"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/jian"
+                    android:layout_width="@dimen/x16"
+                    android:layout_height="@dimen/x16" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

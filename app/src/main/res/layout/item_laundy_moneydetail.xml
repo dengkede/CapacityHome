@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/x28"
+    android:paddingRight="@dimen/x28"
+    android:paddingTop="@dimen/x44"
+    android:paddingBottom="@dimen/x44"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_title"
+            android:lineSpacingExtra="@dimen/x10"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:text="洗衣消费·付款成功"
+            android:textSize="@dimen/x28"
+            android:layout_toLeftOf="@+id/tv_money"
+            android:layout_marginRight="@dimen/x12"
+            android:textColor="@color/fontcolor_f6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textSize="@dimen/x26"
+            android:textStyle="bold"
+            android:text="-5000.00点"
+            android:textColor="@color/color_ff00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="@dimen/x32"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/fontcolor_f9"
+            android:textSize="@dimen/x24"
+            android:text="2018-02-28 17:26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/x22"
+            android:textColor="@color/fontcolor_f9"
+            android:text="洗衣卷消费"
+            android:id="@+id/moneyDetail_tv_typeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

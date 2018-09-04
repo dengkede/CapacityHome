@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/popsimple_write_rect"
+    android:layout_height="match_parent">
+    <!--必须确定-->
+     <TextView
+         android:text="标题"
+         android:id="@+id/tv_title"
+         android:textSize="@dimen/x28"
+         android:textColor="@color/fontcolor_f3"
+         android:gravity="center"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/x82" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="#f2f2f2"
+        />
+    <TextView
+        android:layout_marginTop="@dimen/x32"
+        android:text="内容"
+        android:id="@+id/tv_content"
+        android:textSize="@dimen/x24"
+        android:textColor="#545454"
+        android:lineSpacingExtra="@dimen/x10"
+        android:paddingLeft="@dimen/x18"
+        android:paddingRight="@dimen/x18"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+<LinearLayout
+    android:layout_marginTop="@dimen/x32"
+    android:layout_marginBottom="@dimen/x24"
+    android:layout_marginLeft="@dimen/x32"
+    android:layout_marginRight="@dimen/x32"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<TextView
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:text="关闭"
+    android:background="@drawable/myorder_rect_sloid_e0"
+    android:id="@+id/tv_cancel"
+    android:gravity="center"
+    android:textSize="@dimen/x24"
+    android:textColor="@color/fontcolor_f6"
+    android:layout_height="@dimen/x64" />
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_marginLeft="@dimen/x36"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="查看"
+        android:gravity="center"
+        android:background="@drawable/home_rect_sloid_yellow"
+        android:textSize="@dimen/x24"
+        android:textColor="@color/white"
+        android:layout_height="@dimen/x64" />
+</LinearLayout>
+
+</LinearLayout>

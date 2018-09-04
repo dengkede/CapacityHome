@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/x18"
+    android:orientation="vertical"
+    android:background="@color/fontcolor_f2"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_marginRight="@dimen/x28"
+        android:layout_marginLeft="@dimen/x28"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/myorder_tv_time"
+            android:textColor="@color/fontcolor_f3"
+            android:text=""
+            android:textSize="@dimen/x28"
+            android:gravity="center"
+            android:paddingTop="@dimen/x8"
+            android:paddingBottom="@dimen/x8"
+            android:paddingRight="@dimen/x26"
+            android:paddingLeft="@dimen/x26"
+            android:background="@drawable/myorder_rect_sloid_e0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_doubt"
+            android:layout_toLeftOf="@+id/tv_doubtNumber"
+            android:textSize="@dimen/x28"
+            android:text="有疑问"
+            android:layout_centerVertical="true"
+            android:textColor="@color/fontcolor_f9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_doubtNumber"
+            android:textSize="@dimen/x28"
+            android:text=""
+            android:maxLength="4"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/fontcolor_yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingRight="@dimen/x28"
+        android:paddingLeft="@dimen/x28"
+        android:layout_marginBottom="@dimen/x40"
+        android:layout_marginTop="@dimen/x36"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/x12"
+            android:layout_alignParentLeft="true"
+            android:text=""
+            android:paddingLeft="@dimen/x24"
+            android:paddingRight="@dimen/x24"
+            android:paddingTop="@dimen/x2"
+            android:paddingBottom="@dimen/x2"
+            android:background="@drawable/home_rect_sloid_state2"
+            android:textSize="@dimen/x24"
+            android:id="@+id/myorder_tv_state"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+<TextView
+    android:textColor="@color/fontcolor_f6"
+    android:layout_toRightOf="@+id/myorder_tv_state"
+    android:layout_centerVertical="true"
+    android:layout_width="wrap_content"
+    android:layout_marginRight="@dimen/x12"
+    android:text=""
+    android:textSize="@dimen/x28"
+    android:id="@+id/myorder_tv_content"
+    android:layout_height="wrap_content" />
+<LinearLayout
+    android:id="@+id/lp"
+    android:gravity="center_horizontal|bottom"
+    android:layout_centerVertical="true"
+    android:layout_alignParentRight="true"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <TextView
+            android:text=""
+            android:id="@+id/myorder_tv_money"
+            android:textSize="@dimen/x28"
+            android:textColor="@color/fontcolor_f3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_yuan"
+        android:textSize="@dimen/x18"
+        android:text="元"
+        android:layout_marginLeft="@dimen/x8"
+        android:textColor="@color/fontcolor_f9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginRight="@dimen/x28"
+        android:layout_marginLeft="@dimen/x28"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_alignParentTop="true"
+            android:textColor="@color/fontcolor_f9"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/myorder_tv_orderState"
+            android:textSize="@dimen/x24"
+            android:lineSpacingExtra="@dimen/x10"
+            android:layout_marginRight="@dimen/x4"
+            android:text=""
+            android:id="@+id/myorder_tv_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/myorder_tv_orderState"
+            android:text=""
+            android:textColor="@color/fontcolor_d8"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/x24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="@dimen/x16"
+        android:layout_marginBottom="@dimen/x36"
+        android:layout_marginRight="@dimen/x28"
+        android:layout_marginLeft="@dimen/x28"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_orderNumer"
+        android:textSize="@dimen/x24"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/fontcolor_f9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:id="@+id/myorder_tv_orderState2"
+            android:text=""
+            android:textColor="@color/fontcolor_d8"
+            android:textSize="@dimen/x24"
+            android:gravity="right|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/x1"-->
+        <!--android:background="#e4e4e4"-->
+        <!--android:layout_marginLeft="@dimen/x28"-->
+        <!--android:layout_marginRight="@dimen/x28"-->
+        <!--/>-->
+</LinearLayout>

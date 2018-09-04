@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lyt_bg_color"
+        android:paddingBottom="10dp"
+        android:orientation="vertical" >
+        
+         <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/divider_bg_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tv_door"
+                style="@style/txt_setting_style"
+                 android:textColor="@drawable/selector_orange_white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/txt_config_sound" />
+            
+
+            <ImageButton
+                android:id="@+id/ibtn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/switch_off"
+                android:button="@null" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:background="@color/divider_bg_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/divider_bg_color" />
+
+       
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ListView
+                android:id="@+id/tone_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@color/transparent_color"
+                android:divider="@color/divider_bg_color"
+                android:dividerHeight="1.0dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:background="@color/divider_bg_color" />
+    </LinearLayout>
+
+</LinearLayout>

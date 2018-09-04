@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popsimple_write_rect">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/x32"
+        android:layout_marginTop="@dimen/x32"
+        android:text="提示信息"
+        android:textColor="#333333"
+        android:textSize="@dimen/x32" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginLeft="@dimen/x32"
+        android:layout_marginRight="@dimen/x32"
+        android:layout_marginTop="@dimen/x32"
+        android:lineSpacingExtra="@dimen/x12"
+        android:text="请开启定位权限,否则可能将导致部分功能不能正常使用。"
+        android:textColor="@color/fontcolor_f3"
+        android:textSize="@dimen/x28" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/x10">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_cancel"
+            android:layout_width="@dimen/x180"
+            android:layout_height="@dimen/x82"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_sure"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#578aa5"
+            android:textSize="@dimen/x28" />
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="@dimen/x180"
+            android:layout_height="@dimen/x82"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="去设置"
+            android:textColor="#578aa5"
+            android:textSize="@dimen/x28" />
+    </RelativeLayout>
+</RelativeLayout>

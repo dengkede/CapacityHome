@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/popsimple_write_rect"
+    android:padding="@dimen/x20"
+    android:layout_height="match_parent">
+<!--必须确定-->
+
+<LinearLayout
+    android:layout_above="@+id/layout_bottom"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/tv_titles"
+        android:text="注册协议"
+        android:textSize="14sp"
+        android:layout_marginTop="@dimen/x32"
+        android:layout_alignParentTop="true"
+        android:textColor="#222222"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:progressDrawable="@drawable/pg" />
+    <TextView
+        android:lineSpacingExtra = "@dimen/x15"
+        android:visibility="gone"
+        android:layout_below="@+id/tv_titles"
+        android:layout_marginTop="@dimen/x52"
+        android:id="@+id/tv_content"
+        android:textSize="14sp"
+        android:textColor="@color/fontcolor_f6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <WebView
+        android:id="@+id/webView"
+        android:layout_below="@+id/tv_titles"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></WebView>
+</LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/x20"
+        android:id="@+id/layout_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x82">
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:text="不同意"
+            android:textColor="@color/fontcolor_f9"
+            android:gravity="center"
+            android:background="@drawable/home_rect_sloid_yellow2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginLeft="@dimen/x28"
+            android:text="同意"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:background="@drawable/home_rect_sloid_yellow2"
+            android:id="@+id/tv_agree"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</RelativeLayout>

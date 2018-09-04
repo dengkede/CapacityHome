@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/x28"
+    android:paddingRight="@dimen/x28"
+    android:background="#ffffff"
+    tools:context="com.example.administrator.capacityhome.selfcenter.SelfCenterActivity">
+    <include layout="@layout/layout_toptitle"
+        />
+    <TextView
+        android:textStyle="bold"
+        android:textSize="@dimen/x42"
+        android:text="银行卡管理"
+        android:layout_marginTop="@dimen/x36"
+        android:layout_marginBottom="@dimen/x38"
+        android:textColor="@color/fontcolor_f3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.chanven.lib.cptr.PtrClassicFrameLayout
+        android:id="@+id/pcf_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ListView
+        android:divider="@color/fontcolor_e0"
+        android:dividerHeight="@dimen/x1"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:id="@+id/bankcadManage_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+    </com.chanven.lib.cptr.PtrClassicFrameLayout>
+    <include layout="@layout/layout_empty_data"
+        android:id="@+id/layout_empty"
+        />
+</LinearLayout>

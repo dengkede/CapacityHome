@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/popsimple_write_rect"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_title1"
+        android:gravity="center"
+        android:textSize="@dimen/x28"
+        android:paddingTop="@dimen/x28"
+        android:paddingBottom="@dimen/x28"
+        android:text="扫码成功，选择喜欢的品牌？"
+        android:textColor="@color/fontcolor_f3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <GridView
+        android:id="@+id/listview_Brand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x36"
+        android:layout_marginRight="@dimen/x36"
+        android:horizontalSpacing="@dimen/x12"
+        android:verticalSpacing="@dimen/x12"
+        android:numColumns="2"></GridView>
+
+<TextView
+    android:id="@+id/tv_title"
+    android:gravity="center"
+    android:textSize="@dimen/x28"
+    android:paddingTop="@dimen/x48"
+    android:paddingBottom="@dimen/x28"
+    android:text="请问您要洗什么？"
+    android:textColor="@color/fontcolor_f3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+   <TextView
+       android:id="@+id/tv_type1"
+       android:layout_marginTop="@dimen/x20"
+       android:layout_marginLeft="@dimen/x36"
+       android:layout_marginRight="@dimen/x36"
+       android:layout_width="match_parent"
+       android:textColor="@color/white"
+       android:layout_gravity="center"
+       android:text="我要洗 - 衣、裤"
+       android:gravity="center"
+       android:background="@drawable/laundy_rect_yellow_80"
+       android:layout_height="@dimen/x100" />
+
+    <TextView
+        android:layout_marginBottom="@dimen/x36"
+        android:id="@+id/tv_type2"
+        android:layout_marginTop="@dimen/x28"
+        android:layout_marginLeft="@dimen/x36"
+        android:layout_marginRight="@dimen/x36"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:text="我要洗 - 鞋子"
+        android:gravity="center"
+        android:background="@drawable/laundy_rect_blue_80"
+        android:layout_height="@dimen/x100" />
+</LinearLayout>

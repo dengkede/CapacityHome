@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/x28"
+    android:paddingRight="@dimen/x28"
+    android:background="@color/white"
+    tools:context="com.example.administrator.capacityhome.login.LoginActivity">
+    <include layout="@layout/layout_toptitle"
+        />
+    <TextView
+        android:layout_marginTop="@dimen/x36"
+        android:text="设置密码"
+        android:textSize="@dimen/x42"
+        android:textColor="@color/fontcolor_f3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="请输入您的登陆密码，"
+        android:textColor="@color/fontcolor_f9"
+        android:textSize="@dimen/x22"
+        android:layout_marginTop="@dimen/x56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="您可以用来登陆您的“优e管家”帐号"
+        android:textColor="@color/fontcolor_f9"
+        android:textSize="@dimen/x22"
+        android:layout_marginTop="@dimen/x16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/x44"
+        android:background="@color/fontcolor_f2"
+        android:paddingRight="@dimen/x22"
+        android:paddingLeft="@dimen/x22"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x84">
+        <TextView
+            android:text="新设密码"
+            android:textSize="@dimen/x28"
+            android:textColor="@color/fontcolor_f3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:paddingLeft="@dimen/x28"
+            android:id="@+id/register2_etPassword"
+            android:hint="请设置原密码"
+            android:inputType="textPassword"
+            android:background="@null"
+            android:gravity="center_vertical|left"
+            android:textColor="@color/fontcolor_f9"
+            android:textSize="@dimen/x28"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/x20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x84">
+        <TextView
+            android:id="@+id/tv_verticode"
+            android:paddingLeft="@dimen/x22"
+            android:text="再次输入"
+            android:textSize="@dimen/x28"
+            android:gravity="center_vertical|left"
+            android:textColor="@color/fontcolor_f3"
+            android:background="@color/fontcolor_f2"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/register2_etPassword2"
+            android:inputType="textPassword"
+            android:textSize="@dimen/x28"
+            android:layout_toLeftOf="@+id/resetPassword_getCode"
+            android:gravity="center_vertical|left"
+            android:hint="请输入密码"
+            android:paddingLeft="@dimen/x30"
+            android:paddingRight="@dimen/x30"
+            android:layout_toRightOf="@+id/tv_verticode"
+            android:background="@color/fontcolor_f2"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
+<LinearLayout
+    android:layout_marginTop="@dimen/x68"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x96">
+    <TextView
+        android:id="@+id/tv_last"
+        android:text="上一步"
+        android:layout_weight="1"
+        android:textSize="@dimen/x34"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:textColor="@color/fontcolor_f6"
+        android:background="@color/fontcolor_f2"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_marginLeft="@dimen/x28"
+        android:text="确认注册"
+        android:layout_weight="1"
+        android:textSize="@dimen/x34"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/fontcolor_yellow"
+        android:layout_height="match_parent" />
+</LinearLayout>
+
+
+</LinearLayout>

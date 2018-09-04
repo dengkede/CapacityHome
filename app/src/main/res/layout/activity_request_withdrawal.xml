@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:id="@+id/layout_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.capacityhome.selfcenter.PayPasswordActivity">
+
+        <RelativeLayout
+            android:id="@+id/layout_top"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x112">
+            <RelativeLayout
+                android:layout_alignParentLeft="true"
+                android:id="@+id/relayout_back"
+                android:paddingLeft="@dimen/x18"
+                android:layout_width="@dimen/x160"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ljt_black"
+                    android:layout_centerVertical="true"
+                    android:layout_width="@dimen/x36"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="@dimen/x36" />
+            </RelativeLayout>
+            <TextView
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/x34"
+                android:text="申请提现"
+                android:textColor="@color/fontcolor_f3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/requestWithdrawal_tvSubmit"
+                android:paddingLeft="@dimen/x28"
+                android:paddingRight="@dimen/x28"
+                android:background="@null"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/fontcolor_yellow"
+                android:textSize="@dimen/x28"
+                android:text="提交"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="#e3e3e3"
+        />
+ <RelativeLayout
+     android:id="@+id/layout_bind"
+     android:background="@color/white"
+     android:paddingLeft="@dimen/x28"
+     android:paddingRight="@dimen/x28"
+     android:layout_marginTop="@dimen/x20"
+     android:layout_width="match_parent"
+     android:layout_height="@dimen/x112">
+     <TextView
+         android:text="绑定银行卡"
+         android:textColor="@color/fontcolor_f3"
+         android:layout_centerVertical="true"
+         android:layout_alignParentLeft="true"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+     <ImageView
+         android:id="@+id/img2"
+         android:layout_alignParentRight="true"
+         android:layout_centerVertical="true"
+         android:src="@mipmap/rjt_hui"
+         android:adjustViewBounds="true"
+         android:scaleType="centerCrop"
+         android:layout_width="@dimen/x30"
+         android:layout_height="@dimen/x30" />
+ </RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/relayout_chooseBank"
+        android:background="#ffffff"
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x112">
+        <TextView
+            android:id="@+id/requestWithdrawal_tv_bankName"
+            android:text=""
+            android:textColor="@color/fontcolor_f3"
+            android:textSize="@dimen/x28"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text=""
+            android:layout_marginLeft="@dimen/x18"
+            android:layout_toRightOf="@+id/requestWithdrawal_tv_bankName"
+            android:textColor="@color/fontcolor_f9"
+            android:textSize="@dimen/x28"
+            android:id="@+id/requestWithdrawal_tv_userName"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/requestWithdrawal_tv_bankNumber"
+            android:layout_toRightOf="@+id/requestWithdrawal_tv_userName"
+            android:layout_toLeftOf="@+id/img"
+            android:textColor="@color/fontcolor_f9"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/x24"
+            android:text="620 16273 ********276"
+            android:layout_marginLeft="@dimen/x12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/img"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/rjt_hui"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="#ffffff"
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28"
+        android:layout_marginTop="@dimen/x1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x112">
+        <TextView
+            android:id="@+id/tv"
+            android:textColor="@color/fontcolor_f9"
+            android:text="可提现"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/x28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:background="@null"
+            android:textSize="@dimen/x28"
+            android:id="@+id/requestWithdrawal_tv_money"
+            android:layout_toRightOf="@+id/tv"
+            android:hint="请输入提现金额"
+            android:textColorHint="@color/fontcolor_f9"
+            android:textColor="@color/fontcolor_f9"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/requestWithdrawal_allDraw"
+            android:layout_marginLeft="@dimen/x18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_toRightOf="@+id/requestWithdrawal_tv_money"
+            android:text="元"
+            android:layout_toLeftOf="@+id/requestWithdrawal_allDraw"
+            android:textSize="@dimen/x28"
+            android:layout_marginRight="@dimen/x10"
+            android:textColor="@color/fontcolor_f9"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/requestWithdrawal_allDraw"
+            android:textSize="@dimen/x28"
+            android:text="全部提现"
+            android:textColor="@color/fontcolor_yellow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:background="#ffffff"
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28"
+        android:layout_marginTop="@dimen/x1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x112">
+        <TextView
+            android:id="@+id/tv2"
+            android:textColor="@color/fontcolor_f6"
+            android:text="有"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/x28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/requestWithdrawal_tv_moneyNo"
+            android:layout_toRightOf="@+id/tv2"
+            android:text="7,265,162,728"
+            android:textSize="@dimen/x28"
+            android:textColor="@color/fontcolor_yellow"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_toRightOf="@+id/requestWithdrawal_tv_moneyNo"
+            android:text="元无法提现"
+            android:textSize="@dimen/x28"
+            android:textColor="@color/fontcolor_f6"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="@dimen/x28"
+            android:text="查看原因"
+            android:layout_marginRight="@dimen/x18"
+            android:layout_toLeftOf="@+id/img2"
+            android:textColor="@color/fontcolor_yellow"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/rjt_hui"
+            android:id="@id/img2"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relayout_replain"
+        android:background="#ffffff"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x112">
+        <TextView
+            android:layout_marginRight="@dimen/x20"
+            android:layout_toLeftOf="@+id/img3"
+            android:layout_marginLeft="@dimen/x28"
+            android:textColor="@color/fontcolor_f9"
+            android:text="提现说明及提现额度"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/x28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x28"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/rjt_hui"
+            android:id="@id/img3"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30" />
+        </RelativeLayout>
+</LinearLayout>

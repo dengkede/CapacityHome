@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/x28"
+    android:paddingRight="@dimen/x28"
+    android:background="@color/white"
+    tools:context="com.example.administrator.capacityhome.login.LoginActivity">
+    <include layout="@layout/layout_toptitle"
+        />
+    <TextView
+        android:layout_marginTop="@dimen/x36"
+        android:text="手机验证"
+        android:textSize="@dimen/x42"
+        android:textColor="@color/fontcolor_f3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="请输入您的手机号码，"
+        android:textColor="@color/fontcolor_f9"
+        android:textSize="@dimen/x22"
+        android:layout_marginTop="@dimen/x56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="登陆或者注册您的“优e管家”帐号"
+        android:textColor="@color/fontcolor_f9"
+        android:textSize="@dimen/x22"
+        android:layout_marginTop="@dimen/x16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/x44"
+        android:background="#e0e0e0"
+        android:paddingRight="@dimen/x22"
+        android:paddingLeft="@dimen/x22"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x84">
+        <TextView
+            android:text="+86"
+            android:textSize="@dimen/x28"
+            android:textColor="@color/fontcolor_f3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginLeft="@dimen/x14"
+            android:src="@mipmap/mondey_detail"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_width="@dimen/x20"
+            android:layout_height="@dimen/x16" />
+        <EditText
+            android:paddingLeft="@dimen/x28"
+            android:id="@+id/register_etPhoneNumber"
+            android:hint="请输入手机号"
+            android:inputType="number"
+            android:background="@null"
+            android:gravity="center_vertical|left"
+            android:textColor="@color/fontcolor_f9"
+            android:textSize="@dimen/x28"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/x20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x84">
+        <TextView
+            android:id="@+id/tv_verticode"
+            android:paddingLeft="@dimen/x22"
+            android:text="验证码"
+            android:textSize="@dimen/x28"
+            android:gravity="center_vertical|left"
+            android:textColor="@color/fontcolor_f3"
+            android:background="@color/color_e0"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/register_etVertifyCode"
+            android:inputType="number"
+            android:textSize="@dimen/x28"
+            android:layout_toLeftOf="@+id/register_getCode"
+            android:gravity="center_vertical|left"
+            android:hint="请输入验证码"
+            android:layout_marginRight="@dimen/x20"
+            android:paddingLeft="@dimen/x30"
+            android:paddingRight="@dimen/x30"
+            android:layout_toRightOf="@+id/tv_verticode"
+            android:background="@color/color_e0"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/register_getCode"
+            android:text="获取验证码"
+            android:textSize="@dimen/x22"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@color/fontcolor_yellow"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/x180"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+  <LinearLayout
+      android:id="@+id/layout_check"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:gravity="center"
+      android:layout_marginTop="@dimen/x46"
+      android:layout_marginBottom="@dimen/x46"
+      android:layout_height="wrap_content">
+      <CheckedTextView
+          android:id="@+id/ct_check"
+          android:checked="true"
+          android:layout_width="@dimen/x30"
+          android:layout_height="@dimen/x30"
+          android:layout_marginRight="@dimen/x12"
+          android:background="@drawable/fzt_paytype_selecor2" />
+      <TextView
+          android:textSize="@dimen/x24"
+          android:textColor="@color/fontcolor_f9"
+          android:text="阅读并同意"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+      <TextView
+          android:id="@+id/tv_argument"
+          android:textSize="@dimen/x24"
+          android:textColor="@color/fontcolor_yellow"
+          android:text="《优e管家服务条款》"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+  </LinearLayout>
+    <TextView
+        android:id="@+id/register_tvReset"
+        android:background="@color/fontcolor_yellow"
+        android:gravity="center"
+        android:text="下一步"
+        android:textSize="@dimen/x34"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x96" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/login_tvVertifyCode"
+        android:textColor="@color/fontcolor_f9"
+        android:textSize="@dimen/x22"
+        android:text="点击下一步，即表示已阅读并同意《优e管家服务条款》"
+        android:gravity="center"
+        android:paddingTop="@dimen/x38"
+        android:paddingBottom="@dimen/x38"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

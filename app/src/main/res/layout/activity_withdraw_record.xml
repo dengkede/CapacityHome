@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/layout_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.capacityhome.smarthome.SmartHomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x112"
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:id="@+id/relayout_imgBack"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/x120"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginLeft="@dimen/x16"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:src="@mipmap/ljt_black"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:layout_width="@dimen/x40"
+                android:layout_height="@dimen/x40" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="提现记录"
+            android:textColor="@color/fontcolor_f3"
+            android:textSize="@dimen/x42" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x28"
+            android:paddingRight="@dimen/x28"
+            android:text="回复"
+            android:textColor="@color/fontcolor_yellow"
+            android:textSize="@dimen/x28" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="#e3e3e3"
+        />
+
+    <com.chanven.lib.cptr.PtrClassicFrameLayout
+        android:id="@+id/pcf_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ListView
+            android:clipToPadding="true"
+            android:paddingTop="@dimen/x20"
+            android:footerDividersEnabled="false"
+            android:id="@+id/listview_withdrawDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f2f2f2"
+            android:divider="@color/fontcolor_f2"
+            android:dividerHeight="@dimen/x20"></ListView>
+    </com.chanven.lib.cptr.PtrClassicFrameLayout>
+    <include layout="@layout/layout_empty_data"
+        android:id="@+id/layout_empty"
+        android:visibility="gone"
+        />
+</LinearLayout>

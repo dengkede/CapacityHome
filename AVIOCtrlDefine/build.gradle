@@ -1,0 +1,42 @@
+apply plugin: 'com.android.library'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.2'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: '*.jar')
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.3'
+    publishNonDefault true
+
+
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['libs']
+        }
+
+//        v3_1_1_0{
+//            java.srcDirs = ['src/v3_1_1_0']
+//            jniLibs.srcDirs = ['libs/v3_1_1_0']
+//        }
+
+//        v3_1_5_9{
+//            java.srcDirs = ['src/v3_1_5_9']
+//            jniLibs.srcDirs = ['libs/v3_1_5_9']
+//        }
+
+    }
+}

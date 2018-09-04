@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+    <!--<include layout="@layout/layout_menu"/>-->
+    <include layout="@layout/activity_main_new"
+        />
+    <include layout="@layout/layout_menu"
+        android:id="@+id/layout_menu"
+        />
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/popsimple_write_rect"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/tv_title"
+    android:gravity="center"
+    android:textSize="@dimen/x28"
+    android:paddingTop="@dimen/x28"
+    android:paddingBottom="@dimen/x28"
+    android:text="是否删除当前图片"
+    android:textColor="@color/fontcolor_f3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/fontcolor_f2"
+        />
+
+    <widget.MyTextView
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/x36"
+        android:id="@+id/tv_address"
+        android:text=""
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28"
+        android:lineSpacingMultiplier="1.1"
+        android:textColor="@color/fontcolor_f6"
+        android:textSize="@dimen/x28"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+  <LinearLayout
+      android:layout_marginBottom="@dimen/x36"
+      android:layout_marginTop="@dimen/x36"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <TextView
+          android:text="取消"
+          android:gravity="center"
+          android:paddingTop="@dimen/x2"
+          android:paddingBottom="@dimen/x2"
+          android:background="@drawable/home_rect_sloid_e02"
+          android:textSize="@dimen/x24"
+          android:id="@+id/tv_cancel"
+          android:textColor="@color/fontcolor_f9"
+          android:layout_marginLeft="@dimen/x28"
+          android:minWidth="@dimen/x220"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="@dimen/x80" />
+      <TextView
+          android:id="@+id/tv_sure"
+          android:text="确定"
+          android:gravity="center"
+          android:layout_marginLeft="@dimen/x56"
+          android:paddingLeft="@dimen/x24"
+          android:paddingRight="@dimen/x24"
+          android:background="@drawable/home_rect_sloid_yellow2"
+          android:textSize="@dimen/x24"
+          android:textColor="@color/white"
+          android:minWidth="@dimen/x220"
+          android:layout_marginRight="@dimen/x28"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="@dimen/x80" />
+  </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:padding="@dimen/x20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="周五"
+            android:id="@+id/fzt_withdrawalRecord_item_tv_time1"
+            android:textSize="15sp"
+            android:textColor="#333333"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/fzt_withdrawalRecord_item_tv_money"
+            android:text="-100"
+            android:textSize="13sp"
+            android:textColor="@color/fontcolor_yellow"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/fzt_withdrawalRecord_item_tv_time1"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_alignParentTop="true"
+            android:id="@+id/fzt_withdrawalRecord_item_tv_time3"
+            android:background="#ff6600"
+            android:text="刚你"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/x60"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:layout_toRightOf="@+id/fzt_withdrawalRecord_item_tv_money"
+            android:paddingRight="@dimen/x8"
+            android:paddingLeft="@dimen/x8"
+            android:paddingTop="@dimen/x4"
+            android:paddingBottom="@dimen/x4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="已转款"
+            android:id="@+id/fzt_withdrawalRecord_item_tv_state"
+            android:textSize="13sp"
+            android:textColor="@color/fontcolor_yellow"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/fzt_withdrawalRecord_item_tv_time2"
+            android:textSize="13sp"
+            android:textColor="#999999"
+            android:text="06/25"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/x12"
+            android:layout_below="@+id/fzt_withdrawalRecord_item_tv_time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center_vertical|left"
+            android:layout_below="@+id/fzt_withdrawalRecord_item_tv_time1"
+            android:textSize="13sp"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_marginTop="@dimen/x12"
+            android:textColor="#999999"
+            android:id="@+id/fzt_withdrawalRecord_item_tv_note"
+            android:text="WAP端自助兑换余额，兑换前余额375.25，兑换后余额275.52"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_toRightOf="@+id/fzt_withdrawalRecord_item_tv_time1"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_toLeftOf="@+id/fzt_withdrawalRecord_item_tv_state"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    
+
+</LinearLayout>

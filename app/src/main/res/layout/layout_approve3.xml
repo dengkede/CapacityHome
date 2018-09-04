@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:id="@+id/layout_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.capacityhome.selfcenter.PayPasswordActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x112"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_alignParentLeft="true"
+            android:id="@+id/relayout_back"
+            android:paddingLeft="@dimen/x18"
+            android:layout_width="@dimen/x160"
+            android:layout_height="match_parent">
+            <ImageView
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ljt_black"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/x36"
+                android:layout_alignParentLeft="true"
+                android:layout_height="@dimen/x36" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="实名认证"
+            android:textColor="@color/fontcolor_f3"
+            android:textSize="@dimen/x34" />
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x28"
+            android:paddingRight="@dimen/x28"
+            android:text="提交"
+            android:textColor="@color/fontcolor_yellow"
+            android:textSize="@dimen/x28" />
+    </RelativeLayout>
+
+    <widget.BounceScrollView
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_marginTop="@dimen/x12"
+                android:background="@drawable/fzt_basicinformation_rect"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x24"
+                    android:layout_weight="1"
+                    android:text="当前状态："
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:maxLength="12"
+                    android:padding="@dimen/x32"
+                    android:textColor="#666666"
+                    android:textSize="13sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_marginTop="@dimen/x12"
+                android:background="@drawable/fzt_basicinformation_rect"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_state_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x24"
+                    android:layout_weight="1"
+                    android:text="认证说明："
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_reason"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:maxLength="12"
+                    android:padding="@dimen/x32"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/relayout_chooseType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_marginTop="@dimen/x20"
+                android:background="@drawable/fzt_basicinformation_rect"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x24"
+                    android:text="证件类型："
+                    android:id="@+id/s"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_toRightOf="@+id/s"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/tv_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="请选择您证件的类型"
+                    android:maxLength="12"
+                    android:padding="@dimen/x32"
+                    android:textColor="#666666"
+                    android:textSize="13sp" />
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/rjt_hui"
+                    android:layout_width="@dimen/x46"
+                    android:layout_height="@dimen/x46" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_marginTop="@dimen/x12"
+                android:background="@drawable/fzt_basicinformation_rect"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x24"
+                    android:text="真实姓名："
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:layout_gravity="center_vertical|left"
+                    android:id="@+id/et_cardName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="请填写您的真实姓名"
+                    android:maxLength="12"
+                    android:padding="@dimen/x32"
+                    android:textColor="#666666"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_marginTop="@dimen/x12"
+                android:background="@drawable/fzt_basicinformation_rect"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x24"
+                    android:text="证件号码："
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_cardNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_gravity="center_vertical|left"
+                    android:hint="请填写您需要绑定的证件号码"
+                    android:padding="@dimen/x32"
+                    android:textColor="#666666"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/x1"
+                android:background="#ffffff"
+                android:paddingTop="@dimen/x14"
+                android:paddingBottom="@dimen/x14"
+                android:paddingLeft="@dimen/x28"
+                android:paddingRight="@dimen/x28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/relayout_front"
+                    android:background="#f1f1f1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/x212">
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:background="#f1f1f1"
+                        android:src="@mipmap/sfz_z"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/relayout_verso"
+                    android:layout_marginLeft="@dimen/x22"
+                    android:background="#f1f1f1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/x212">
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:background="#f1f1f1"
+                        android:src="@mipmap/sfz_f"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="@dimen/x28"
+                android:paddingBottom="@dimen/x28"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:layout_marginTop="@dimen/x20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_front"
+                    android:layout_marginLeft="@dimen/x28"
+                    android:layout_marginRight="@dimen/x28"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_marginBottom="@dimen/x28"
+                    android:layout_marginTop="@dimen/x28"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x2"
+                    android:background="#f1f1f1"
+                    />
+                <ImageView
+                    android:id="@+id/img_verso"
+                    android:layout_marginLeft="@dimen/x28"
+                    android:layout_marginRight="@dimen/x28"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </widget.BounceScrollView>
+</LinearLayout>

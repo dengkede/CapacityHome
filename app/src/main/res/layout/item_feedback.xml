@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:paddingLeft="@dimen/x28"
+    android:paddingBottom="@dimen/x32"
+    android:paddingTop="@dimen/x32"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_centerVertical="true"
+        android:id="@+id/tv_feedback_state"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/fontcolor_d8"
+        android:textSize="@dimen/x26"
+        android:text="[未读]"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_centerVertical="true"
+        android:textColor="@color/fontcolor_f9"
+        android:layout_marginLeft="@dimen/x8"
+        android:layout_toRightOf="@+id/tv_feedback_state"
+        android:textSize="@dimen/x26"
+        android:text="周一"
+        android:id="@+id/tv_feedback_week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_centerVertical="true"
+        android:id="@+id/tv_feedback_data"
+        android:textColor="@color/fontcolor_f9"
+        android:layout_marginLeft="@dimen/x8"
+        android:layout_toRightOf="@+id/tv_feedback_week"
+        android:textSize="@dimen/x26"
+        android:text="2018/02/27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_toLeftOf="@+id/tv_feedbak_state2"
+        android:layout_centerVertical="true"
+        android:id="@+id/tv_feedback_type"
+        android:textColor="@color/fontcolor_f9"
+        android:layout_marginLeft="@dimen/x8"
+        android:layout_toRightOf="@+id/tv_feedback_data"
+        android:textSize="@dimen/x26"
+        android:text="意见反馈"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_feedbak_state2"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/x26"
+        android:text="待审"
+        android:layout_marginRight="@dimen/x12"
+        android:textColor="@color/fontcolor_d8"
+        android:layout_toLeftOf="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_marginRight="@dimen/x19"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/img1"
+        android:src="@mipmap/rjt_hui"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_width="@dimen/x30"
+        android:layout_height="@dimen/x30" />
+</RelativeLayout>
+    <View
+        android:background="@color/fontcolor_f2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/x44"
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28"
+        android:paddingTop="@dimen/x44">
+
+        <TextView
+            android:id="@+id/tv_feedback_questionType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="[账户安全]"
+            android:textColor="@color/fontcolor_f6"
+            android:textSize="@dimen/x26" />
+
+        <TextView
+            android:id="@+id/tv_feedback_questionState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x8"
+            android:layout_toRightOf="@+id/tv_feedback_questionType"
+            android:text="[已回]"
+            android:textColor="@color/fontcolor_f6"
+            android:textSize="@dimen/x26" />
+
+        <TextView
+            android:id="@+id/tv_feedback_questionContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x8"
+            android:layout_toRightOf="@+id/tv_feedback_questionState"
+            android:text=""
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxWidth="@dimen/x360"
+            android:textColor="@color/fontcolor_f6"
+            android:textSize="@dimen/x26" />
+
+        <TextView
+            android:id="@+id/tv_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x2"
+            android:layout_toRightOf="@+id/tv_feedback_questionContent"
+            android:text="[附件]"
+            android:textColor="#06AEC9"
+            android:textSize="@dimen/x26" />
+    </RelativeLayout>
+</LinearLayout>

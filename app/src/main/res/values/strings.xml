@@ -1,0 +1,475 @@
+<resources>
+    <string name="app_name">优e管家</string>
+    <!-- //日期选择
+ -->
+    <string name="cancle">取消</string>
+    <string name="title">请选择出生日期</string>
+    <string name="commit">确定</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+    <string name="select_date">选择日期</string>
+    <string name="current_date">当前日期</string>
+    <string name="select_time">选择时间</string>
+    <string name="current_time">当前时间</string>
+    <string name="viewfinderview_status_text1">将二维码/条码放入取景框内</string>
+    <string name="viewfinderview_status_text2">即可自动扫描</string>
+    <!-- WXPayEntryActivity -->
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="app_tip">提示</string>
+
+
+    <!--yiluoke-->
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="comfirm">Comfirm</string>
+    <string name="ok">OK</string>
+    <string name="none">None</string>
+    <string name="close">Close</string>
+    <string name="ignore">Ignore</string>
+
+    <!-- dialog title -->
+    <string name="dialog_AboutMe">About me</string>
+    <string name="dialog_AddCamera">Add Camera</string>
+    <string name="dialog_EditCamera">Edit Camera</string>
+    <string name="dialog_Parameter">Parameter Setting</string>
+    <string name="dialog_AdvancedSetting">Advanced Setting</string>
+    <string name="dialog_LanSearch">Search camera from LAN</string>
+    <string name="dialog_EventSearch">Search Event</string>
+    <string name="dialog_FormatSDCard">Format SDCard</string>
+    <string name="dialog_LiveView">Live View</string>
+    <string name="dialog_Playback">Playback</string>
+    <string name="dialog_Exit">Exit?</string>
+
+    <string name="kc_aec">状态：</string>
+    <string name="kc_aec_update_state">校正状态：</string>
+    <string name="kc_aec_update_state_not_yet">尚未</string>
+    <string name="kc_aec_update_state_finished">已完成</string>
+    <string name="kc_aec_update_time">校正时间：</string>
+    <string name="kc_aec_update_time_not_yet">尚未</string>
+    <string name="kc_aec_train">校正</string>
+    <string name="ntf_no_open_notification">The notification Settings are not opened</string>
+
+
+    <!-- Main page -->
+    <string name="ctxReconnect">Reconnect</string>
+    <string name="ctxEditCamera">Edit Camera</string>
+    <string name="ctxViewEvent">Event List</string>
+    <string name="ctxViewSnapshot">Snapshot</string>
+    <string name="ctxRemoveCamera">Remove Camera</string>
+    <string name="optAddCamera">Add</string>
+    <string name="optAbout">About</string>
+    <string name="optExplain">Explanation</string>
+    <string name="optExit">Exit</string>
+    <string name="lstClickToAddCamera">Add Device</string>
+    <string name="logout">Logout</string>
+    <string name="addUser">Add User</string>
+    <string name="btnExit">Exit</string>
+    <string name="btnCancel">Cancel</string>
+    <string name="btnRunInBackground">Background</string>
+    <string name="Delete_All_Photos">Delete all photos</string>
+    <string name="tips_open_gps">Is open GPS?</string>
+    <string name="loading_wait">Loading wait...</string>
+    <string name="tips_wakeup_failed">Wake up failed!</string>
+    <string name="tips_incoming_view">Video are influenced by network status, please choose whether to answer</string>
+    <string name="tips_speak_failed">Speak channel open failed.</string>
+
+    <!-- About page -->
+    <string name="txtCopyRightInfo">Copyright 2017 All rights reserved.</string>
+
+    <!-- Add camera page -->
+    <string name="txtName">Name:</string>
+    <string name="txtAddCamera">Add Camera</string>
+    <string name="txtUID">UID:</string>
+    <string name="txtSecurityCode">Security Code:</string>
+    <string name="btnScan">Scan</string>
+    <string name="btnSearch">Search</string>
+
+    <!-- Edit camera page -->
+    <string name="txtDeviceSetting">Device Setting</string>
+    <string name="txtAdvancedSetting">Advanced Setting</string>
+    <string name="btnAdvanced">Advanced</string>
+
+    <!-- Modify security code page -->
+    <string name="txtOldPassword">Old:</string>
+    <string name="txtNewPassword">New:</string>
+    <string name="txtConfirmPassword">Confirm:</string>
+
+    <!-- Live View page -->
+    <string name="txtFPS">FPS:</string>
+    <string name="txtBPS">bps:</string>
+    <string name="txtOnlineNumber">Online:</string>
+    <string name="txtFrameRatio">Rcv:</string>
+    <string name="txtTurnOffAudio">Turn off Audio</string>
+    <string name="txtTurnOnSpeaker">Speaker</string>
+    <string name="txtTurnOnMicrophone">Microphone</string>
+    <string name="txtAudioOff">Audio Off</string>
+    <string name="txtSpeaker">Speaker</string>
+    <string name="txtMicrophone">Microphone</string>
+    <string name="txtMute">Mute</string>
+    <string name="txtListen">Listen</string>
+    <string name="txtListening">Listening</string>
+    <string name="txtSpeak">Speak</string>
+    <string name="txtSpeaking">Speaking</string>
+    <string name="txtQuality">Quality:</string>
+    <string name="txtGood">Good</string>
+    <string name="txtNormal">Normal</string>
+    <string name="txtBad">Bad</string>
+
+    <!-- Event playback page -->
+    <string name="txtEventType">Event type:</string>
+    <string name="txtEventTime">Event time:</string>
+
+    <!-- Event list page -->
+    <string name="txtSearchEventDuration">Search event from:</string>
+    <string name="pull_to_refresh">Pull down to refresh</string>
+    <string name="release_to_refresh">release to refresh</string>
+    <string name="refreshing">Refreshing...</string>
+
+    <!-- Event search page -->
+    <string name="txtSearchEventFrom">Begin Time</string>
+    <string name="txtSearchEventTo">End Time</string>
+    <string name="txtSearchEventType">Event</string>
+    <string name="txtLoadEventList">Loading&#8230;</string>
+    <string name="txtNoResultFound">No result found.</string>
+
+    <!-- LAN search page -->
+    <string name="btnRefresh">Refresh</string>
+
+    <!-- Format SDCard page -->
+    <string name="btnFormat">Format</string>
+    <string name="txtFormatSDCardTitle">Detect an Unrecognizable SDCard!</string>
+    <string name="txtFormatSDCardDesc">You may choose to format the SDCard or it could not be use. Format command will ERASE all data of your SDCard.</string>
+    <string name="chbShowTipsFormatSDCard">Show tips when detect an unrecognizable card.</string>
+
+    <!-- No connection page -->
+    <string name="txtNoNetworkConnection">No Connection</string>
+    <string name="txtCameraOffline">Camera offline</string>
+    <string name="btnRetry">Retry</string>
+
+    <!-- No photos page -->
+    <string name="txtNoPhotos">No Photos</string>
+    <string name="txtNoPhotosDetail">This album contains no photos.</string>
+
+    <!-- IOTCAPIs -->
+    <string name="IOTC_ER_NOT_INITIALIZED">IOTC initialize failed</string>
+    <string name="IOTC_ER_CONNECT_IS_CALLING">IOTC_Connect_ByXX() is calling</string>
+    <string name="IOTC_ER_FAIL_RESOLVE_HOSTNAME">Can\'t resolved server\'s domain name</string>
+    <string name="IOTC_ER_SERVER_NOT_RESPONSE">Server not response</string>
+    <string name="IOTC_ER_FAIL_GET_LOCAL_IP">Can\'t Get local IP</string>
+    <string name="IOTC_ER_UNLICENSE">UID is not registered</string>
+    <string name="IOTC_ER_EXCEED_MAX_SESSION">Exceed the max session number</string>
+    <string name="IOTC_ER_TIMEOUT">Timeout</string>
+    <string name="IOTC_ER_DEVICE_NOT_LISTENING">The device is not on listening</string>
+    <string name="IOTC_ER_CAN_NOT_FIND_DEVICE">Can\'t not found device</string>
+
+    <!-- AVAPIs -->
+    <string name="AV_ER_INVALID_ARG">Invalid session ID</string>
+    <string name="AV_ER_EXCEED_MAX_SESSION">Exceed the max session number</string>
+    <string name="AV_ER_FAIL_CREATE_THREAD">Failed to create thread</string>
+    <string name="AV_ER_SERV_NO_RESPONSE">Server not response</string>
+    <string name="AV_ER_TIMEOUT">Timeout</string>
+    <string name="AV_ER_SESSION_CLOSE_BY_REMOTE">Remote site closed this session</string>
+    <string name="AV_ER_REMOTE_TIMEOUT_DISCONNECT">Session is disconnected because timeout</string>
+    <string name="AV_ER_INVALID_SID">Session ID was invalid</string>
+
+    <!-- Connection Status -->
+    <string name="connstus_connecting">正在联机...&#8230;</string>
+    <string name="connstus_connected">已联机</string>
+    <string name="connstus_disconnect">未联机</string>
+    <string name="connstus_unknown_device">未知设备</string>
+    <string name="connstus_connection_failed">联机失败</string>
+    <string name="connstus_wrong_password">密码错误</string>
+    <string name="connection_timeout">连线逾时</string>
+    <string name="connstus_sleep">睡眠中</string>
+    <string name="connstus_max_session">Device has get max connect</string>
+    <!-- Connection Mode -->
+    <string name="connmode_p2p">P2P</string>
+    <string name="connmode_relay">Relay</string>
+    <string name="connmode_lan">LAN</string>
+    <string name="connmode_none">None</string>
+
+    <!-- Event type -->
+    <string name="evttype_all">全部</string>
+    <string name="evttype_motion_detection">红外报警</string>
+    <string name="evttype_video_lost">视频中断</string>
+    <string name="evttype_io_alarm">IO 报警</string>
+    <string name="evttype_motion_pass">红外报警</string>
+    <string name="evttype_video_resume">视频恢复</string>
+    <string name="evttype_io_alarm_pass">IO 报警</string>
+    <string name="evttype_expt_reboot">系统异常重启</string>
+    <string name="evttype_sd_fault">SD卡错误</string>
+    <string name="evttype_fulltime_recording">全时录像</string>
+
+    <!-- Tips -->
+    <string name="tips_warning">Warning</string>
+    <string name="tips_add_camera_ok">Add camera successfully.</string>
+    <string name="tips_edit_camera_ok">Edit camera successfully.</string>
+    <string name="tips_remove_camera_ok">Remove camera successfully.</string>
+    <string name="tips_add_camera_duplicated">This camera already exists, please enter another one.</string>
+    <string name="tips_camera_name">[Camera name] must be entered.</string>
+    <string name="tips_dev_uid">[UID] is not entered.</string>
+    <string name="tips_dev_uid_not">[UID] is not existed.</string>
+    <string name="tips_dev_uid_character">[UID] must be typed in 20 characters.</string>
+    <string name="tips_dev_security_code">[Security Code] is not entered.</string>
+    <string name="tips_remove_camera_confirm">Sure to remove?</string>
+    <string name="tips_snapshot_ok">Snapshot saved.</string>
+    <string name="tips_snapshot_failed">Snapshot was failed.</string>
+    <string name="tips_all_field_can_not_empty">Camera Password can not be empty.</string>
+    <string name="tips_old_password_is_wrong">The old password is invalid.</string>
+    <string name="tips_new_passwords_do_not_match">The new password and confirm password do not match.</string>
+    <string name="tips_new_passwords_length_illegal">New password length must be more than 5 and less than 13.</string>
+    <string name="tips_modify_security_code_ok">Modify security code successfully, and it will reconnect later.</string>
+    <string name="tips_modify_security_code_failed">Modify security code failed.</string>
+    <string name="tips_wifi_retrieving">Retrieving&#8230;</string>
+    <string name="tips_wifi_connecting">Connecting&#8230;</string>
+    <string name="tips_wifi_connected">Connected</string>
+    <string name="tips_wifi_disconnect">Disconnect</string>
+    <string name="tips_wifi_remote_device_timeout">No response from remote device</string>
+    <string name="tips_wifi_remote_device_connecting">connection remote device connecting</string>
+    <string name="tips_wifi_wrongpassword">Incorrect  password</string>
+    <string name="tips_wifi_ready">Ready</string>
+    <string name="tips_wifi_weak_signal">Connected (Weak Signal)</string>
+    <string name="tips_wifi_connect_failed">Unable to connect to the network.</string>
+    <string name="tips_no_barcode_scanner"> No barcode scan software available in your device, do you want to download now?</string>
+    <string name="tips_no_sdcard">No SDCard found in your device.</string>
+    <string name="tips_search_event_no_result">No result found.</string>
+    <string name="tips_play_record_failed">Play record failed.</string>
+    <string name="tips_play_record_end">The video has finished playing.</string>
+    <string name="tips_play_record_timeout">Can not found remote record.</string>
+    <string name="tips_search_within_an_hour">Within an hour</string>
+    <string name="tips_search_within_half_a_day">Within half a day</string>
+    <string name="tips_search_within_a_day">Within a day</string>
+    <string name="tips_search_within_a_week">Within a week</string>
+    <string name="tips_search_custom">Custom period</string>
+    <string name="tips_format_sdcard_confirm">Format command will ERASE all data of SDCard, Continue?</string>
+    <string name="tips_format_sdcard_success">Format SDCard success.</string>
+    <string name="tips_format_sdcard_failed">Format SDCard failed.</string>
+    <string name="tips_no_snapshot_found">No snapshot found.</string>
+    <string name="tips_someone_responded">Someone responded.</string>
+    <string name="tips_location_failed">Locating failed!Please check GPS or Network!</string>
+    <string name="tips_wakeup_device">wakeup...</string>
+
+    <!-- Notification -->
+    <string name="ntfAppRunning">%s is running&#8230;</string>
+    <string name="ntfIncomingEvent">Incoming event from %s</string>
+    <string name="ntfIncomingMultipleEvent">Incoming event in %d cameras.</string>
+    <string name="ntfCameraRunning">Running with %d camera(s).</string>
+    <string name="ntfLastEventIs">Last event is %s.</string>
+    <string name="ntfLastEventFrom">Last event from %s.</string>
+
+    <!-- Image Description -->
+    <string name="imgDesc_EventDetail">View Event Detail</string>
+    <string name="imgDesc_NoPhotos">No Photos</string>
+
+    <!-- Snapshot Gallery -->
+    <!-- Delete Snapshot -->
+    <string name="dlgAreYouSureToDeleteThisSnapshot">Delete?</string>
+    <string name="dlgDeleteSnapshotYes">Yes</string>
+    <string name="dlgDeleteSnapshotNo">No</string>
+    <string name="dlgAreYouSureToDeleteAllSnapshot">Are you sure to delete all snapshots?</string>
+    <string name="tips_dev_uid_special_characters">[UID] Must be 1-9 or A-Z</string>
+
+
+    <string name="call">call </string>
+    <string name="txt_ylk_device_list">Device list</string>
+    <string name="txt_ylk_setting">Setting </string>
+    <string name="txt_ylk_event">Event List</string>
+    <string name="txt_ylk_ablum">Snapshot</string>
+    <string name="txt_ylk_alarm_record"> Alarm Record </string>
+    <string name="txt_ylk_online_disk"> Network Disk </string>
+    <string name="txt_ylk_alarm">Alarm </string>
+    <string name="txt_ylk_camera">Monitor</string>
+    <string name="txt_ylk_lock">Unlock</string>
+    <string name="txt_ylk_history">Visit List</string>
+    <string name="txt_no_dev_switch"> No switchable device available </string>
+    <string name="dev_rename">Name </string>
+    <string name="dev_set_dev">Modify Device</string>
+    <string name="dev_pwd">Unlock password Switch</string>
+    <string name="dev_bigdoor_time">Door 1 Unlock time</string>
+    <string name="dev_littledoor_time">Door 2 Unlock time</string>
+    <string name="dev_area_num">alarm zone quantity</string>
+    <string name="dev_change_lockpwd">Edit unlock password</string>
+    <string name="check_dev_fw"> OTA Update</string>
+    <string name="dev_def_status"> Armed state </string>
+    <string name="dev_del_dev">Remove this device</string>
+    <string name="user_manager">User Manager</string>
+    <string name="finger_list">Finger Manager</string>
+
+    <string name="tips_input_password">Please enter password</string>
+    <string name="tips_input_big_door_password">input door1 unlock password</string>
+    <string name="tips_input_small_door_password"> input door2 unlock password </string>
+    <string name="tips_input_undefence_password">input disarm password</string>
+    <string name="txtBigDoor">Big Door</string>
+    <string name="txtSmallDoor">Small Door</string>
+
+    <string name="txtBigLock">Big Door unlock</string>
+    <string name="txtSmallLock">Small Door unlock</string>
+    <string name="txtCancel">Cancel</string>
+    <string name="txtDelete">Delete</string>
+    <string name="dev_dev_name">Device name:</string>
+    <string name="tips_recording_start"> Recording started </string>
+    <string name="tips_close_recording">Please turn off recording.</string>
+    <string name="tips_recording_saved_ablumn">Recording saved to album </string>
+    <string name="recording_tips_size"> Storage space is full </string>
+    <string name="recording_tips_format"> Does not support the video format </string>
+    <string name="txtcall">call </string>
+    <string name="txtcallansewered"> Other users have been answering the doorbell </string>
+    <string name="txt_bigdoor_unlock">BigDoor unlock</string>
+    <string name="txt_smalldoor_unlock">SmallDoor unlock</string>
+    <string name="txt_custom_tone"> Custom tone </string>
+    <string name="txt_device_no_defence">no alarm zone</string>
+    <string name="txt_defence_setting_failed"> Arm Set failure </string>
+    <string name="txt_tigger_alarm_failed"> Trigger an alarm failure </string>
+    <string name="txt_defence_indoor"> Arming at home </string>
+    <string name="txt_defence_outdoor">arming away home</string>
+    <string name="txt_defence_disram">disarm</string>
+    <string name="txt_alarm_bandit">burglar alarm</string>
+    <string name="txt_alarm_fire">fire alarm</string>
+    <string name="txt_alarm_medical"> Medical care </string>
+    <string name="txt_alarm_door_curain">curtain</string>
+    <string name="txt_alarm_shutdown">shut</string>
+    <string name="txt_getting_alarm_data">obtaining alarm data...</string>
+    <string name="txt_device_no_response"> No response equipment </string>
+    <string name="dialog_setting_unlock_passwd"> setting a password...</string>
+    <string name="dialog_chang_unlock_passwd">modify unlock password</string>
+    <string name="dialog_alarm_record">alarm record</string>
+    <string name="txt_init_passwd"> The initial password :</string>
+    <string name="txt_input_passwd">input password :</string>
+    <string name="txt_input_passwd_again">input password again:</string>
+    <string name="txt_tips">tips:</string>
+    <string name="txt_diable_successed">password disable successfully</string>
+    <string name="txt_config"> Configuration Options </string>
+    <string name="txt_config_sound"> Push Tone </string>
+    <string name="txt_ota_update">OTA updata</string>
+    <string name="txt_config_openwifi">Only recevive video in WIFI</string>
+    <string name="txt_push_tone">Push Tone</string>
+    <string name="txt_set_tone">setting tone</string>
+    <string name="txt_opendoor_succeed"> unlock success </string>
+    <string name="txt_opendoor_failed">verify unlock password fail </string>
+    <string name="txt_alarmsrc_phone">mobile phone</string>
+    <string name="txt_alarmsrc_indoor">indoor monitor</string>
+    <string name="txt_alarmsrc_remote"> Remote Control </string>
+    <string name="txt_defence">alarm zone</string>
+    <string name="txt_processing">Processing...</string>
+    <string name="txt_dev_not_connect"> The device is not connected, please try again later...</string>
+    <string name="txt_dev_not_find_dev"> no such device...</string>
+    <string name="txt_forbid_open">disable unlock</string>
+    <string name="txt_try_times">can only try %d times </string>
+    <string name="txt_try_times_out">wrong password inputs exceed limitation, please try it again after %d minutes </string>
+    <string name="txt_video">Record Files</string>
+    <string name="txt_ablum">Snapshot</string>
+    <string name="dialog_camera_shortcut"> Video shortcut </string>
+    <string name="dialog_unlock_shortcut"> Unlock shortcut </string>
+
+    <string name="auto_video">Automatic video</string>
+
+    <string name="unlock_record">Unlock record</string>
+
+    <string name="dialog_dev_list">Device list</string>
+    <string name="dlgPlsSelectDelFile"> Please select Delete Files </string>
+    <string name="txt_baiduPush">Baidu Puah </string>
+
+
+    <!-- Snapshot Gallery -->
+    <!-- Delete Snapshot -->
+
+    <string name="txt_edit">Edit</string>
+    <string name="txt_done">Done</string>
+    <string name="dlgAreYouSureToDeleteThisRecord">Delete?</string>
+
+    <string name="dlgWifiSearchResult">Device Search Result</string>
+    <string name="txt_dev_pwd">Password</string>
+
+    <string name="txt_add_dev_online">Add online device</string>
+    <string name="txt_first_add_dev">First add device</string>
+    <string name="txt_shortcut_add">smart link</string>
+    <string name="txt_firmware_update">Devicetype:%s\nVersion: </string>
+    <string name="txt_firmware_update_click">\nClick OK to download Firmware</string>
+    <string name="txt_unlock_pwd_disable">Unlock passwd is disabled</string>
+    <string name="txt_unlock_pwd_change">Unlock passwd is changed</string>
+    <string name="txt_unlock_pwd_enable">Unlock passwd is enable</string>
+
+    <string name="tips_pic_saved_ablumn">Picture  is already saved to ablum</string>
+    <string name="txt_saved_ablumn">Saved to ablum</string>
+    <string name="txt_communication_failed">Failed to connect Camera.</string>
+    <string name="txt_search_result">Search result</string>
+
+    <string name="txt_device_name">Camera</string>
+
+
+    <!--easy Wifi Setting page -->
+    <string name="txt_please_confirm_whether">please confirm whether the wifi is the one you’re connected to.</string>
+    <string name="txt_notusewifi">wifi Please connect to Wi-Fi network.</string>
+    <string name="txt_Select_the_device">Select the device you want to add</string>
+    <string name="txt_Please_check_devices">Please check device’s user manual for SSID and password.</string>
+    <string name="txt_Cannot_find_the_device">Cannot find the device</string>
+    <string name="txt_Add_device_to_your_account">Add device to your account</string>
+    <string name="txt_Sync_device_to_your_account">Sync device to your account</string>
+
+    <string name="txt_Is_the_IP_camera_wired_or_wireless">Is the IP camera wired or wireless?</string>
+    <string name="txt_Please_connect_the_wired_IP">Please connect the wired IP camera to an Ethernet network.</string>
+    <string name="txt_Wired">Wired</string>
+    <string name="txt_Wireless">Wireless</string>
+    <string name="txt_searching_device">Is searching device, please wait.</string>
+    <string name="tips_please_check_dev">Please check your device is serving correctly.</string>
+    <string name="tips_cant_connect_AP">Connection failed with device\'s AP.</string>
+    <string name="dialog_rename">Device Name:</string>
+
+    <string name="txt_guster_come_to_visit">User call</string>
+    <string name="txt_other_already_respose">User answer</string>
+    <string name="txt_add_dev_first">please add device</string>
+    <string name="txt_pls_input_diapasswd">Please input passwd</string>
+    <string name="dialog_Exit_End">Exit...</string>
+    <string name="dialog_no_app">Your media player is not supported.</string>
+    <string name="txt_intent_to_app">The media player is not supported,you need to download another video player (MX Player) for this video.</string>
+
+    <string name="txt_failed_to_get_ipaddr">Failed to get ip address</string>
+    <string name="txt_fw_ready">Firmware is ready</string>
+    <string name="txt_fw_not_ready">Firmware is  not ready yet</string>
+    <string name="txt_fw_upgrade_complete">Updata Successed.</string>
+    <string name="txt_fw_upgrade_failed">Upgrade Failed.</string>
+    <string name="txt_fw_upgrade_process">Device is upgrading.\n Any operation is not allowed!</string>
+
+    <string name="txt_searching">Setting...</string>
+    <string name="btnSearchAgain">Search Again</string>
+    <string name="txt_get_ip_failed">Failed to get ip address</string>
+    <string name="txt_select_dev">Select Device</string>
+
+
+    <string name="message">Message</string>
+    <string name="notwifi_content">The current model for non-wifi, go to settings interface off switch</string>
+
+    <string name="checkFW">Check the firmware version.</string>
+    <string name="upgradeFWOK">Firmware upgrade successfully.</string>
+    <string name="upgradeFWtitle"> Upgrade Firmware</string>
+    <string name="upgradeFW">The latest firmware is%s. It may take some time to upgrade firmware, upgrade now?</string>
+    <string name="upgradeFWfail">Firmware upgrade failed.</string>
+    <string name="upgradeFWtimeout">Device response timeout.</string>
+    <string name="noUpgrade">Your firmware is the latest version.</string>
+
+
+    <string name="mappingerror">baidu Device registration failed, please confirm your network, then re-add the device.</string>
+    <string name="registererror">baidu APP Push Notification registration failed, please confirm your network, then reopen the app.</string>
+    <string name="mappingsuccess">baidu Device registration success.</string>
+    <string name="registersuccess">baidu Push Notification registration success.</string>
+
+
+    <string name="GCMmappingerror">GCM Device registration failed, please confirm your network, then re-add the device.</string>
+    <string name="GCMregistererror">GCM APP Push Notification registration failed, please confirm your network, then reopen the app.</string>
+    <string name="GCMmappingsuccess">GCM Device registration success.</string>
+    <string name="GCMregistersuccess">GCM Push Notification registration success.</string>
+
+
+    <string name="txt_Push">After you change the push setting, please reopen the app and re-add the device, so that the indication of push service would be updated.</string>
+
+
+    <!--Live view-->
+    <string name="Liveview_networkbad">Internet is not stable, please re-entry the liveview.</string>
+    <string name="start_upgrade">Update device takes about 5-10 minutes, update after the completion of the device will restart itself.</string>
+    <string name="tips_record_ok">Record end</string>
+
+</resources>

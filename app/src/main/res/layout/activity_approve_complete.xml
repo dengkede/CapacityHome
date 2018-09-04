@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:id="@+id/layout_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.capacityhome.selfcenter.PayPasswordActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x112"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x28"
+            android:paddingRight="@dimen/x28"
+            android:text="返回"
+            android:textColor="@color/fontcolor_f3"
+            android:textSize="@dimen/x28" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="实名认证"
+            android:textColor="@color/fontcolor_f3"
+            android:textSize="@dimen/x34" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x28"
+            android:paddingRight="@dimen/x28"
+            android:text="提交"
+            android:textColor="@color/fontcolor_yellow"
+            android:textSize="@dimen/x28" />
+    </RelativeLayout>
+
+    <widget.BounceScrollView
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/relayout_state"
+                android:layout_marginTop="@dimen/x20"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/x28"
+                android:paddingRight="@dimen/x28"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x110">
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:textColor="@color/fontcolor_f9"
+                    android:textSize="@dimen/x28"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_toRightOf="@+id/tv_state"
+                    android:id="@+id/tv_reason"
+                    android:textColor="@color/fontcolor_f9"
+                    android:textSize="@dimen/x28"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/relayout_state2"
+                android:layout_marginTop="@dimen/x20"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/x28"
+                android:paddingRight="@dimen/x28"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x110">
+
+                <TextView
+                    android:id="@+id/tv_state2"
+                    android:textColor="@color/fontcolor_f9"
+                    android:textSize="@dimen/x28"
+                   android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relayout_chooseType"
+                android:layout_marginTop="@dimen/x1"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/x28"
+                android:paddingRight="@dimen/x28"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x110">
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:textColor="@color/fontcolor_f9"
+                    android:textSize="@dimen/x28"
+                  android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/x1"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/x28"
+                android:paddingRight="@dimen/x28"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x110">
+
+                <TextView
+                    android:id="@+id/et_cardName"
+                    android:textColorHint="@color/fontcolor_f9"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:textColor="@color/fontcolor_f9"
+                    android:textSize="@dimen/x28"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/x1"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/x28"
+                android:paddingRight="@dimen/x28"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x110">
+
+                <TextView
+                    android:id="@+id/et_cardNumber"
+                    android:textColorHint="@color/fontcolor_f9"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:textColor="@color/fontcolor_f9"
+                    android:textSize="@dimen/x28"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:paddingTop="@dimen/x28"
+                android:paddingBottom="@dimen/x28"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:layout_marginTop="@dimen/x20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img_front"
+                    android:layout_marginLeft="@dimen/x28"
+                    android:layout_marginRight="@dimen/x28"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_marginBottom="@dimen/x28"
+                    android:layout_marginTop="@dimen/x28"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x2"
+                    android:background="#f1f1f1"
+                    />
+                <ImageView
+                    android:id="@+id/img_verso"
+                    android:layout_marginLeft="@dimen/x28"
+                    android:layout_marginRight="@dimen/x28"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </widget.BounceScrollView>
+</LinearLayout>

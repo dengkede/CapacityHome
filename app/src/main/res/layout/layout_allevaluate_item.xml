@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--首页评价轮播itemn-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/x32"
+    android:gravity="top"
+    android:paddingTop="@dimen/x32"
+    android:background="@drawable/popsimple_write_rect"
+    android:paddingRight="@dimen/x32"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/x28"
+            android:textColor="#333333"
+            android:text="美丽新娘"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_phone"
+            android:textSize="@dimen/x26"
+            android:textColor="@color/fontcolor_f9"
+            android:text="189***718"
+            android:layout_toRightOf="@+id/tv_name"
+            android:layout_marginLeft="@dimen/x8"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_time"
+            android:textSize="@dimen/x26"
+            android:textColor="@color/fontcolor_f9"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="7月28日 15:30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:layout_marginTop="@dimen/x32"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/fontcolor_f2"
+        />
+<LinearLayout
+    android:paddingTop="@dimen/x32"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/img_user"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/img_user"
+        android:layout_width="@dimen/x48"
+        android:layout_height="@dimen/x48" />
+    <TextView
+        android:lineSpacingExtra="@dimen/x6"
+        android:id="@+id/tv_content"
+        android:gravity="center_vertical"
+        android:text="洗的不错。挺干净的。要继续保持哦。下次还找你们洗。【4张图】- 轻触看图"
+        android:layout_marginLeft="@dimen/x24"
+        android:textSize="@dimen/x26"
+        android:textColor="#333333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/x28"
+    android:paddingRight="@dimen/x28"
+    android:background="#ffffff"
+    tools:context="com.example.administrator.capacityhome.selfcenter.SelfCenterActivity">
+    <include layout="@layout/layout_toptitle"
+        />
+    <widget.BounceScrollView
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:paddingBottom="@dimen/x24"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textSize="@dimen/x42"
+                android:text="我的钱包"
+                android:layout_marginTop="@dimen/x36"
+                android:layout_marginBottom="@dimen/x56"
+                android:textColor="@color/fontcolor_f3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv"
+                    android:text="余额："
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/fontcolor_f9"
+                    android:textSize="@dimen/x28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/tv"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/x34"
+                    android:textColor="@color/fontcolor_f3"
+                    android:id="@+id/tv_selfCenter_balance"
+                    android:text="32736152"
+                    android:paddingBottom="@dimen/x3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginLeft="@dimen/x14"
+                    android:layout_toRightOf="@+id/tv_selfCenter_balance"
+                    android:layout_centerVertical="true"
+                    android:text="元"
+                    android:textColor="@color/fontcolor_f9"
+                    android:textSize="@dimen/x28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_toLeftOf="@+id/tv_selfCenter_withdrawal"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/tv_selfCenter_recharge"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:paddingLeft="@dimen/x38"
+                    android:paddingTop="@dimen/x22"
+                    android:paddingBottom="@dimen/x22"
+                    android:paddingRight="@dimen/x38"
+                    android:text="购洗衣券"
+                    android:background="@drawable/selfcenter_rect_sloid_yellow"
+                    android:textSize="@dimen/x28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:background="@drawable/selfcenter_rect_sloid_black"
+                    android:paddingLeft="@dimen/x38"
+                    android:paddingTop="@dimen/x22"
+                    android:paddingBottom="@dimen/x22"
+                    android:paddingRight="@dimen/x38"
+                    android:text="提现"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:id="@+id/tv_selfCenter_withdrawal"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:layout_marginTop="@dimen/x16"
+                android:background="#f8f8f8"
+                />
+
+
+            <RelativeLayout
+                android:paddingTop="@dimen/x32"
+                android:paddingBottom="@dimen/x32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/x28"
+                    android:textColor="@color/fontcolor_f3"
+                    android:text="洗衣券"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/tv_laundry_count"
+                    android:textStyle="bold"
+                    android:text=""
+                    android:layout_toLeftOf="@+id/ss"
+                    android:textSize="@dimen/x28"
+                    android:textColor="@color/fontcolor_f3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/ss"
+                    android:text="点"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/x28"
+                    android:textColor="@color/fontcolor_f3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/img_1"
+                    android:src="@mipmap/rjt_hui"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_width="@dimen/x30"
+                    android:layout_height="@dimen/x30" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:visibility="gone"
+                android:paddingTop="@dimen/x32"
+                android:paddingBottom="@dimen/x32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/x28"
+                    android:textColor="@color/fontcolor_f3"
+                    android:text="微信免密"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="未开通"
+                    android:layout_toLeftOf="@+id/img_2"
+                    android:textSize="@dimen/x28"
+                    android:layout_marginRight="@dimen/x24"
+                    android:textColor="@color/fontcolor_f9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/img_2"
+                    android:src="@mipmap/rjt_hui"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_width="@dimen/x30"
+                    android:layout_height="@dimen/x30" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:visibility="gone"
+                android:paddingTop="@dimen/x32"
+                android:paddingBottom="@dimen/x32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/x28"
+                    android:textColor="@color/fontcolor_f3"
+                    android:text="支付宝免密"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="已开通"
+                    android:layout_toLeftOf="@+id/img_3"
+                    android:textSize="@dimen/x28"
+                    android:layout_marginRight="@dimen/x24"
+                    android:textColor="@color/fontcolor_f3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/img_3"
+                    android:src="@mipmap/rjt_hui"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_width="@dimen/x30"
+                    android:layout_height="@dimen/x30" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/fontcolor_f2"
+                />
+            <RelativeLayout
+                android:visibility="gone"
+                android:paddingTop="@dimen/x32"
+                android:paddingBottom="@dimen/x32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/x28"
+                    android:textColor="@color/fontcolor_f3"
+                    android:text="积分"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/tv_integration"
+                    android:textStyle="bold"
+                    android:text=""
+                    android:layout_toLeftOf="@+id/sss"
+                    android:textSize="@dimen/x28"
+                    android:textColor="@color/fontcolor_f3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/sss"
+                    android:text="分"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/x28"
+                    android:textColor="@color/fontcolor_f3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/img_4"
+                    android:src="@mipmap/rjt_hui"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_width="@dimen/x30"
+                    android:layout_height="@dimen/x30" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:paddingTop="@dimen/x32"
+                android:paddingBottom="@dimen/x32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/x28"
+                    android:textColor="@color/fontcolor_f3"
+                    android:text="体验卡"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/tv_textCard"
+                    android:textStyle="bold"
+                    android:text=""
+                    android:layout_toLeftOf="@+id/ssss"
+                    android:textSize="@dimen/x28"
+                    android:textColor="@color/fontcolor_f3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/ssss"
+                    android:text=""
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/x28"
+                    android:textColor="@color/fontcolor_f3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/img_8"
+                    android:src="@mipmap/rjt_hui"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_width="@dimen/x30"
+                    android:layout_height="@dimen/x30" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/fontcolor_f2"
+                />
+            <RelativeLayout
+                android:id="@+id/relayout_moneyDetail"
+                android:paddingTop="@dimen/x32"
+                android:paddingBottom="@dimen/x32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/x28"
+                    android:textColor="@color/fontcolor_f3"
+                    android:text="资金明细"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/img_6"
+                    android:src="@mipmap/rjt_hui"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_width="@dimen/x30"
+                    android:layout_height="@dimen/x30" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/fontcolor_f2"
+                />
+            <RelativeLayout
+                android:id="@+id/relayout_selfCenter_withdrawal"
+                android:paddingTop="@dimen/x32"
+                android:paddingBottom="@dimen/x32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/x28"
+                    android:textColor="@color/fontcolor_f3"
+                    android:text="申请提现"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/img_7"
+                    android:src="@mipmap/rjt_hui"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_width="@dimen/x30"
+                    android:layout_height="@dimen/x30" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/fontcolor_f2"
+                />
+            <RelativeLayout
+                android:id="@+id/relayout_withdrawRecord"
+                android:paddingTop="@dimen/x32"
+                android:paddingBottom="@dimen/x32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/x28"
+                    android:textColor="@color/fontcolor_f3"
+                    android:text="提现记录"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/rjt_hui"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_width="@dimen/x30"
+                    android:layout_height="@dimen/x30" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/fontcolor_f2"
+                />
+        </LinearLayout>
+    </widget.BounceScrollView>
+</LinearLayout>

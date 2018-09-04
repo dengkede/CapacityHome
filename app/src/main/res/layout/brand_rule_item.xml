@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x160"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/relayout_img"
+        android:layout_width="@dimen/x160"
+        android:layout_height="@dimen/x160"
+        android:layout_marginLeft="@dimen/x36">
+
+        <ImageView
+            android:id="@+id/img_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x120"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/default_iv" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/x20"
+        android:layout_marginLeft="@dimen/x24"
+        android:layout_marginRight="@dimen/x36"
+        android:layout_marginTop="@dimen/x12"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x38">
+
+            <TextView
+                android:includeFontPadding="false"
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/x12"
+                android:layout_toLeftOf="@+id/tv"
+                android:text="女士上衣"
+                android:textColor="@color/fontcolor_f3"
+                android:textSize="@dimen/x28" />
+
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:includeFontPadding="false"
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x8"
+                android:layout_toLeftOf="@+id/tv_price"
+                android:text="￥"
+                android:textColor="@color/fontcolor_yellow"
+                android:textSize="@dimen/x30" />
+
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:includeFontPadding="false"
+                android:id="@+id/tv_price"
+                android:gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_unit"
+                android:text="15"
+                android:textColor="@color/fontcolor_yellow"
+                android:textSize="@dimen/x32"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginBottom="@dimen/x4"
+                android:layout_alignBottom="@+id/tv_price"
+                android:includeFontPadding="false"
+                android:id="@+id/tv_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x18"
+                android:layout_toLeftOf="@+id/tv_marketPrice"
+                android:text="/件"
+                android:textColor="@color/fontcolor_f9"
+                android:textSize="@dimen/x20" />
+
+                <TextView
+                    android:layout_alignBottom="@+id/tv_price"
+                    android:layout_marginBottom="@dimen/x4"
+                    android:includeFontPadding="false"
+                    android:id="@+id/tv_marketPrice"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="bottom"
+                    android:text="市价20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fontcolor_f9"
+                    android:textSize="@dimen/x20" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x20"
+            android:gravity="left"
+            android:text="内容"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/fontcolor_f9"
+            android:textSize="@dimen/x24" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/layout_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.capacityhome.smarthome.SmartHomeActivity">
+
+    <include layout="@layout/layout_toptitle2" />
+
+    <LinearLayout
+        android:id="@+id/layout_chooseType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x44"
+        android:paddingBottom="@dimen/x36"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28">
+
+        <TextView
+            android:id="@+id/moneyDetail_tvType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提现记录"
+            android:textColor="@color/fontcolor_f3"
+            android:textSize="@dimen/x34" />
+
+        <ImageView
+            android:layout_marginLeft="@dimen/x12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/mondey_detail" />
+        <TextView
+            android:layout_marginLeft="@dimen/x20"
+            android:textSize="@dimen/x28"
+            android:text="收入"
+            android:textColor="@color/fontcolor_f9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_totalEarning"
+            android:textColor="@color/fontcolor_yellow"
+            android:textStyle="bold"
+            android:text=""
+            android:layout_marginLeft="@dimen/x10"
+            android:textSize="@dimen/x28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text=""
+            android:textColor="@color/fontcolor_f9"
+            android:textSize="@dimen/x28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="支出"
+            android:textColor="@color/fontcolor_f9"
+            android:layout_marginLeft="@dimen/x12"
+            android:textSize="@dimen/x28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_totalExpenditure"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@color/fontcolor_yellow"
+            android:layout_marginLeft="@dimen/x10"
+            android:textSize="@dimen/x28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text=""
+            android:textColor="@color/fontcolor_f9"
+            android:textSize="@dimen/x28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.chanven.lib.cptr.PtrClassicFrameLayout
+        android:id="@+id/pcf_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <ListView
+        android:footerDividersEnabled="false"
+        android:id="@+id/listview_moneyDetail"
+        android:layout_width="match_parent"
+        android:background="#f2f2f2"
+        android:divider="#00000000"
+        android:dividerHeight="@dimen/x1"
+        android:layout_height="match_parent"
+        ></ListView>
+    </com.chanven.lib.cptr.PtrClassicFrameLayout>
+    <include layout="@layout/layout_empty_data"
+        android:id="@+id/layout_empty"
+        />
+</LinearLayout>

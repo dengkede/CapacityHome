@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_bar_lay"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x112"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true">
+
+    <Button
+        android:id="@+id/return_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:text=""
+        android:textSize="20sp"
+        android:gravity="left|center_vertical"
+        android:visibility="gone"/>
+    <RelativeLayout
+        android:id="@+id/relayout_imgBack"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_width="@dimen/x120"
+        android:layout_height="match_parent">
+    <ImageView
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/ljt_black"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_width="@dimen/x40"
+        android:layout_height="@dimen/x40" />
+    </RelativeLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/basecolor_dd"
+        android:maxEms="8"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+<ImageView
+    android:visibility="gone"
+    android:src="@mipmap/logo"
+    android:layout_centerInParent="true"
+    android:adjustViewBounds="true"
+    android:scaleType="centerCrop"
+    android:layout_width="@dimen/x126"
+    android:layout_height="@dimen/x32" />
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_centerInParent="true"
+        android:textColor="#dddddd"
+        android:textSize="@dimen/x34"
+        android:text="优e管家"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/top_submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="添加"
+        android:gravity="right|center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/fontcolor_f3"
+        android:textSize="@dimen/x28"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tv_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+       />
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1px"-->
+    <!--android:background="@color/black"-->
+    <!--android:layout_alignParentBottom="true"/>-->
+</RelativeLayout>

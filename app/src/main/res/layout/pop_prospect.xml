@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/relayou_close"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x96"
+        android:layout_alignParentTop="true"
+        android:background="#ec651b"
+        android:paddingLeft="@dimen/x24"
+        android:paddingRight="@dimen/x12">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/close_2" />
+
+        <TextView
+            android:id="@+id/remove_prospect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="清空预估"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x32" />
+
+        <ImageView
+            android:id="@+id/img_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x12"
+            android:layout_toLeftOf="@+id/remove_prospect"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/del_2" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview_pop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relayou_close"
+        android:layout_above="@id/line"
+        android:layout_marginLeft="@dimen/x24"
+        android:divider="@color/fontcolor_f2"
+        android:dividerHeight="@dimen/x1"></ListView>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x20"
+        android:layout_above="@+id/bto"
+        android:background="@color/fontcolor_f2" />
+
+    <LinearLayout
+        android:id="@+id/bto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/x24"
+        android:paddingLeft="@dimen/x24"
+        android:paddingRight="@dimen/x12"
+        android:paddingTop="@dimen/x24">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预估总合计："
+            android:textColor="@color/fontcolor_f3"
+            android:textSize="@dimen/x32" />
+
+        <TextView
+            android:id="@+id/tv_totalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_yellow"
+            android:textSize="@dimen/x32"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/x1"
+            android:layout_marginLeft="@dimen/x3"
+            android:text="元"
+            android:textColor="@color/fontcolor_f9"
+            android:textSize="@dimen/x20" />
+    </LinearLayout>
+</RelativeLayout>

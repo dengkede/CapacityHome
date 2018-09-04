@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:elevation="@dimen/x22"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/relayout_close"
+        android:background="#f9f9f9"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x82">
+        <TextView
+            android:layout_marginLeft="@dimen/x28"
+            android:text="×"
+            android:textSize="@dimen/x64"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|left"
+            android:textColor="@color/fontcolor_f9"
+            android:layout_width="@dimen/x120"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_title"
+            android:paddingTop="@dimen/x20"
+            android:paddingBottom="@dimen/x20"
+            android:text="选择地区"
+            android:textSize="@dimen/x28"
+            android:gravity="center"
+            android:textColor="@color/fontcolor_f3"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_citySure"
+            android:layout_marginRight="@dimen/x28"
+            android:text="确定"
+            android:textSize="@dimen/x28"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/fontcolor_yellow"
+            android:layout_width="@dimen/x120"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="#e3e3e3"
+        />
+    <LinearLayout
+        android:layout_marginTop="@dimen/x36"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/x36"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout_privence"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingTop="@dimen/x20"
+                android:paddingBottom="@dimen/x20"
+                android:textColor="@color/fontcolor_f3"
+                android:textSize="@dimen/x28"
+                android:text="请选择省"
+                android:id="@+id/tv_privence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginLeft="@dimen/x12"
+                android:src="@mipmap/rjt_hui"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30" />
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/layout_city"
+            android:layout_marginLeft="@dimen/x24"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingTop="@dimen/x20"
+                android:paddingBottom="@dimen/x20"
+                android:textColor="@color/fontcolor_f3"
+                android:textSize="@dimen/x28"
+                android:text=""
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginLeft="@dimen/x12"
+                android:src="@mipmap/rjt_hui"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30" />
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/layout_country"
+            android:layout_marginLeft="@dimen/x24"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingTop="@dimen/x20"
+                android:paddingBottom="@dimen/x20"
+                android:textColor="@color/fontcolor_f3"
+                android:textSize="@dimen/x28"
+                android:text=""
+                android:id="@+id/tv_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginLeft="@dimen/x12"
+                android:src="@mipmap/rjt_hui"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30" />
+        </LinearLayout>
+    </LinearLayout>
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/popWindow_et_serch"
+        android:layout_marginTop="@dimen/x28"
+        android:paddingTop="@dimen/x20"
+        android:paddingBottom="@dimen/x20"
+        android:layout_marginLeft="@dimen/x36"
+        android:layout_margin="@dimen/x36"
+        android:layout_width="match_parent"
+        android:background="@drawable/citychoose_rect"
+        android:hint="请输入省份汉语拼音首字母"
+        android:textSize="@dimen/x28"
+        android:gravity="center"
+        android:textColor="@color/fontcolor_f9"
+        android:layout_height="wrap_content" />
+    <GridView
+        android:id="@+id/pop_chooseCity_grid"
+        android:verticalSpacing="@dimen/x36"
+        android:numColumns="3"
+        android:paddingTop="@dimen/x28"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></GridView>
+</LinearLayout>
+</android.support.v7.widget.CardView>

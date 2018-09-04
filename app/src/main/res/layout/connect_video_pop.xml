@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/popsimple_write_rect"
+    android:layout_height="match_parent">
+<TextView
+    android:gravity="center"
+    android:textStyle="bold"
+    android:paddingTop="@dimen/x36"
+    android:paddingBottom="@dimen/x36"
+    android:textColor="@color/fontcolor_f3"
+    android:text="即时视屏查看安全验证"
+    android:textSize="@dimen/x28"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/x24"
+        android:layout_marginRight="@dimen/x24"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x62">
+        <TextView
+            android:textSize="@dimen/x28"
+            android:textColor="@color/fontcolor_f3"
+            android:text="查看手机："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:paddingLeft="@dimen/x12"
+            android:layout_marginLeft="@dimen/x16"
+            android:background="@color/fontcolor_f2"
+            android:paddingTop="@dimen/x4"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/x4"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_phoneNumber"
+                android:textSize="@dimen/x28"
+                android:textStyle="bold"
+                android:text="15883851737"
+                android:textColor="@color/fontcolor_f3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+<TextView
+    android:textColor="@color/fontcolor_f9"
+    android:text="（不可修改）"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_marginTop="@dimen/x18"
+        android:layout_marginBottom="@dimen/x14"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/fontcolor_f2"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/x24"
+        android:layout_marginRight="@dimen/x24"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x62">
+        <TextView
+            android:textSize="@dimen/x28"
+            android:textColor="@color/fontcolor_f3"
+            android:text="查看密码："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:paddingLeft="@dimen/x12"
+            android:layout_marginLeft="@dimen/x16"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="@dimen/x62">
+            <EditText
+                android:id="@+id/et_password"
+                android:textSize="@dimen/x24"
+                android:hint="请输入查看密码"
+                android:background="@null"
+                android:textColor="@color/fontcolor_f3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_marginTop="@dimen/x16"
+        android:layout_marginBottom="@dimen/x16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/fontcolor_f2"
+        />
+    <TextView
+        android:id="@+id/tv_connnect"
+        android:textColor="@color/white"
+        android:text="立即连接查看"
+        android:layout_marginTop="@dimen/x12"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/x24"
+        android:layout_marginRight="@dimen/x24"
+        android:background="@drawable/home_rect_sloid_yellow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x62" />
+
+    <TextView
+        android:layout_marginBottom="@dimen/x36"
+        android:layout_marginTop="@dimen/x36"
+        android:layout_marginLeft="@dimen/x24"
+        android:layout_marginRight="@dimen/x24"
+        android:textColor="@color/fontcolor_f9"
+        android:lineSpacingExtra="@dimen/x8"
+        android:text="温馨提示：连接速度由您手机的网速和门锁的网速决定快慢，连接时请耐心等待。"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

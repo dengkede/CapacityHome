@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/f2_rect"
+    android:layout_height="match_parent">
+<widget.BannerRadiusImageView
+    android:layout_gravity="center"
+    android:adjustViewBounds="true"
+    android:scaleType="centerCrop"
+    android:src="@mipmap/video_de"
+    android:id="@+id/myImage"
+    android:layout_centerInParent="true"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/x160" />
+    <ImageView
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:id="@+id/img_video"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/video"
+        android:layout_width="@dimen/x60"
+        android:layout_height="@dimen/x60" />
+</RelativeLayout>

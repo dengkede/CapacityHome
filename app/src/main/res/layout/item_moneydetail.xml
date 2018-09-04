@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/x42"
+    android:paddingBottom="@dimen/x42"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:text="提现·提现成功"
+        android:textSize="@dimen/x30"
+        android:textColor="@color/fontcolor_f6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/x30"
+        android:text="-5000.00元"
+        android:textColor="@color/color_ff00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+<RelativeLayout
+    android:layout_marginTop="@dimen/x28"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/fontcolor_f9"
+        android:textSize="@dimen/x28"
+        android:text="2018-02-28 17:26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="@color/fontcolor_f3"
+        android:textSize="@dimen/x24"
+        android:layout_centerVertical="true"
+        android:text="中国工商银行"
+        android:layout_marginRight="@dimen/x8"
+        android:id="@+id/moneyDetail_tv_bankName"
+        android:layout_toLeftOf="@+id/moneyDetail_tv_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/x24"
+        android:textColor="@color/fontcolor_f9"
+        android:text="张三(789)"
+        android:id="@+id/moneyDetail_tv_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+</LinearLayout>

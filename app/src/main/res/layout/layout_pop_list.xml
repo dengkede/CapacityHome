@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/popsimple_write_rect2"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_popTitle"
+        android:gravity="center"
+        android:textColor="@color/fontcolor_f3"
+        android:textSize="@dimen/x28"
+        android:textStyle="bold"
+        android:text="选择银行卡"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x80" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x2"
+        android:background="@color/fontcolor_f2"
+        />
+<ListView
+    android:paddingLeft="@dimen/x28"
+    android:paddingRight="@dimen/x28"
+    android:layout_width="match_parent"
+    android:id="@+id/layout_pop_list"
+    android:scrollbars="none"
+    android:dividerHeight="@dimen/x2"
+    android:divider="@color/fontcolor_f2"
+    android:overScrollMode="never"
+    android:layout_height="wrap_content"></ListView>
+    <View
+        android:layout_marginBottom="@dimen/x28"
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/fontcolor_f2"
+        />
+</LinearLayout>

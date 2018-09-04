@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popsimple_write_rect"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/x28"
+        android:paddingTop="@dimen/x28"
+        android:text="绑定手机号码"
+        android:textColor="@color/fontcolor_f3"
+        android:textSize="@dimen/x28" />
+
+    <View
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/fontcolor_f2" />
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/layout_phone"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|left"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/x12"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginLeft="@dimen/x46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="原手机号码："
+        android:textColor="@color/fontcolor_f9"
+        android:textSize="@dimen/x28" />
+        <TextView
+            android:id="@+id/tv_oldPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="12345678912"
+            android:lineSpacingMultiplier="0.9"
+            android:textStyle="bold"
+            android:textColor="@color/fontcolor_f9"
+            android:textSize="@dimen/x28" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/et_phoneNumebr"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x80"
+        android:layout_marginLeft="@dimen/x28"
+        android:layout_marginRight="@dimen/x28"
+        android:paddingLeft="@dimen/x24"
+        android:paddingRight="@dimen/x24"
+        android:layout_marginTop="@dimen/x36"
+        android:background="@drawable/rect_fangf2"
+        android:gravity="center_vertical|left"
+        android:textSize="@dimen/x28"
+        android:hint="请输入手机号，进行绑定"
+        android:inputType="number"
+        android:textColor="@color/fontcolor_f6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x80"
+        android:layout_marginLeft="@dimen/x28"
+        android:layout_marginRight="@dimen/x28"
+        android:layout_marginTop="@dimen/x36"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.2"
+            android:background="@drawable/rect_fangf2"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="@dimen/x24"
+            android:hint="验证码"
+            android:inputType="number"
+            android:textColor="@color/fontcolor_f6"
+            android:textSize="@dimen/x28" />
+
+        <TextView
+            android:id="@+id/tv_getCode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.8"
+            android:background="@color/fontcolor_f6"
+            android:gravity="center"
+            android:text="点击获取验证码"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/x36"
+        android:layout_marginTop="@dimen/x36">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/x80"
+            android:layout_marginLeft="@dimen/x28"
+            android:layout_toRightOf="@+id/myorder_tv_content"
+            android:background="@drawable/home_rect_sloid_e02"
+            android:gravity="center"
+            android:minWidth="@dimen/x220"
+            android:paddingBottom="@dimen/x2"
+            android:paddingTop="@dimen/x2"
+            android:text="取消"
+            android:textColor="@color/fontcolor_f9"
+            android:textSize="@dimen/x24" />
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/x80"
+            android:layout_marginLeft="@dimen/x28"
+            android:layout_marginRight="@dimen/x28"
+            android:layout_toRightOf="@+id/myorder_tv_content"
+            android:background="@drawable/home_rect_sloid_yellow2"
+            android:gravity="center"
+            android:minWidth="@dimen/x220"
+            android:paddingLeft="@dimen/x24"
+            android:paddingRight="@dimen/x24"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x24" />
+    </LinearLayout>
+</LinearLayout>

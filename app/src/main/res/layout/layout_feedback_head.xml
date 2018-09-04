@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:descendantFocusability="afterDescendants"
+    android:layout_height="match_parent">
+    <TextView
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28"
+        android:textSize="@dimen/x42"
+        android:text="意见反馈"
+        android:layout_marginTop="@dimen/x36"
+        android:layout_marginBottom="@dimen/x58"
+        android:textColor="@color/fontcolor_f3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginBottom="@dimen/x28"
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:id="@+id/feedback_tv_searchKey"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/x28"
+            android:layout_marginRight="@dimen/x28"
+            android:layout_toLeftOf="@+id/feedback_img_serch"
+            android:hint="输入搜索关键字"
+            android:textColor="@color/fontcolor_f9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/feedback_img_serch"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/img_search"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_width="@dimen/x56"
+            android:layout_height="@dimen/x56" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x3"
+        android:background="@drawable/shadow"
+        />
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/layout_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/x26">
+
+        <ImageView
+            android:id="@+id/img_pay"
+            android:layout_width="@dimen/x48"
+            android:layout_height="@dimen/x48"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/zhifubao_cdr0" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x26"
+            android:layout_marginStart="14dp"
+            android:text="支付宝支付"
+            android:layout_toRightOf="@+id/img_pay"
+            android:textColor="#666666"
+            android:textSize="@dimen/x28" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_money"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_title"
+            android:layout_marginLeft="@dimen/x4"
+            android:textColor="@color/fontcolor_f9"
+            android:textSize="@dimen/x20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <CheckedTextView
+            android:id="@+id/ct_payType"
+            android:layout_width="@dimen/x42"
+            android:layout_height="@dimen/x42"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/fzt_paytype_selecor" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="#f2f2f2" />
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x12"
+        android:background="@color/fontcolor_f2"
+        />
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x16"
+        android:paddingRight="@dimen/x16"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:minHeight="@dimen/x212"
+        android:layout_height="wrap_content">
+<ImageView
+    android:id="@+id/img_pic"
+    android:layout_gravity="center_vertical"
+    android:adjustViewBounds="true"
+    android:scaleType="centerCrop"
+    android:src="@mipmap/default_iv"
+    android:layout_width="@dimen/x140"
+    android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/x16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/x12"
+                android:layout_toLeftOf="@+id/tv_type"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/tv_title"
+                android:textColor="#454545"
+                android:textSize="@dimen/x30"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:text="抓拍"
+                android:gravity="top"
+                android:id="@+id/tv_type"
+                android:textSize="@dimen/x24"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x30" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_marginTop="@dimen/x12"
+            android:textColor="@color/fontcolor_f9"
+            android:textSize="@dimen/x24"
+            android:layout_marginRight="@dimen/x26"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_marginTop="@dimen/x4"
+            android:textColor="@color/fontcolor_f9"
+            android:textSize="@dimen/x24"
+            android:layout_marginRight="@dimen/x52"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

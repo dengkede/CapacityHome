@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginLeft="@dimen/x16"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x58"
+        android:layout_marginTop="@dimen/x36"
+        android:text="智能居家"
+        android:layout_marginRight="@dimen/x16"
+        android:layout_gravity="left"
+        android:textColor="@color/fontcolor_f3"
+        android:textSize="@dimen/x48" />
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/x16"
+        android:layout_marginBottom="@dimen/x26"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv"
+            android:textSize="@dimen/x28"
+            android:text="智能保护（天）："
+            android:textColor="@color/fontcolor_f9"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_homeCount"
+            android:layout_toRightOf="@+id/tv"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/x34"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="@color/fontcolor_f3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvAbnormal"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/x28"
+            android:paddingRight="@dimen/x28"
+            android:paddingTop="@dimen/x22"
+            android:paddingBottom="@dimen/x22"
+            android:textSize="14sp"
+            android:text="有异常"
+            android:background="@drawable/smarthome_sliod"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <com.tutk.IOTC.Monitor
+        android:id="@+id/monitor"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+
+    <!--
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+             android:orientation="vertical" >
+
+
+            <ImageView
+                android:id="@+id/imgSnapshot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:src="@drawable/snapshot" />
+
+            <ImageView
+                android:id="@+id/imgListenIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:src="@drawable/speaker_on" />
+
+            <ImageView
+                android:id="@+id/imgSpeakOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:src="@drawable/mic_off" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0.3dp"
+            android:background="#CCCCCC"/>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0.7dp"
+            android:background="#EEEEEE"/>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/background_silver_light_two_state" >
+
+            <ImageView
+                android:id="@+id/imgRevert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/revert" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    -->
+</LinearLayout>   

@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/x28"
+    android:id="@+id/layout_parent"
+    android:paddingRight="@dimen/x28"
+    tools:context="com.example.administrator.capacityhome.selfcenter.SelfCenterActivity">
+
+    <include layout="@layout/layout_toptitle" />
+
+    <widget.BounceScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/x24">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x27"
+                android:layout_marginTop="@dimen/x36"
+                android:text="基本信息"
+                android:textColor="@color/fontcolor_f3"
+                android:textSize="@dimen/x42" />
+
+            <RelativeLayout
+                android:id="@+id/relayout_chooseImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/x25"
+                android:paddingTop="@dimen/x25">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="头像"
+                    android:textColor="@color/fontcolor_f3"
+                    android:textSize="@dimen/x30" />
+
+                <ImageView
+                    android:id="@+id/basic_imgUser"
+                    android:layout_width="@dimen/x96"
+                    android:layout_height="@dimen/x96"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x18"
+                    android:layout_toLeftOf="@+id/jian1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/img_user" />
+
+                <ImageView
+                    android:id="@+id/jian1"
+                    android:layout_width="@dimen/x30"
+                    android:layout_height="@dimen/x30"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/rjt_hui" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_f6f6" />
+
+            <RelativeLayout
+                android:id="@+id/relayout_modifyNickName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/x36"
+                android:paddingTop="@dimen/x36">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="昵称"
+                    android:textColor="@color/fontcolor_f3"
+                    android:textSize="@dimen/x30" />
+
+                <TextView
+                    android:id="@+id/basicInfomation_tv_nickName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x18"
+                    android:layout_toLeftOf="@+id/jian2"
+                    android:text="请填写您的昵称"
+                    android:textColor="@color/fontcolor_f9"
+                    android:textSize="@dimen/x22" />
+
+                <ImageView
+                    android:id="@+id/jian2"
+                    android:layout_width="@dimen/x30"
+                    android:layout_height="@dimen/x30"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/rjt_hui" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_f6f6" />
+
+            <RelativeLayout
+                android:id="@+id/relayout_modifyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/x36"
+                android:paddingTop="@dimen/x36">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="姓名"
+                    android:textColor="@color/fontcolor_f3"
+                    android:textSize="@dimen/x30" />
+
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/basicInfomation_tv_userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x18"
+                    android:text="请填写您的姓名"
+                    android:textColor="@color/fontcolor_f9"
+                    android:textSize="@dimen/x22" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_f6f6" />
+
+            <RelativeLayout
+                android:id="@+id/relayoutchooseBirthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/x36"
+                android:paddingTop="@dimen/x36">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="生日"
+                    android:textColor="@color/fontcolor_f3"
+                    android:textSize="@dimen/x30" />
+
+                <TextView
+                    android:id="@+id/basicInfomation_tv_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x18"
+                    android:layout_toLeftOf="@+id/jian4"
+                    android:text="选择你的生日"
+                    android:textColor="@color/fontcolor_f9"
+                    android:textSize="@dimen/x22" />
+
+                <ImageView
+                    android:id="@+id/jian4"
+                    android:layout_width="@dimen/x30"
+                    android:layout_height="@dimen/x30"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/rjt_hui" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_f6f6" />
+
+            <RelativeLayout
+                android:id="@+id/relayout_modifyPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/x36"
+                android:paddingTop="@dimen/x36">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="手机号"
+                    android:textColor="@color/fontcolor_f3"
+                    android:textSize="@dimen/x30" />
+
+                <TextView
+                    android:id="@+id/basicInfomation_tv_phoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x18"
+                    android:layout_toLeftOf="@+id/jian5"
+                    android:text=""
+                    android:textColor="@color/fontcolor_f9"
+                    android:textSize="@dimen/x22" />
+
+                <ImageView
+                    android:id="@+id/jian5"
+                    android:layout_width="@dimen/x36"
+                    android:layout_height="@dimen/x36"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/rjt_hui" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_f6f6" />
+
+            <RelativeLayout
+                android:id="@+id/relayout_approve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/x36"
+                android:paddingTop="@dimen/x36">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="实名认证"
+                    android:textColor="@color/fontcolor_f3"
+                    android:textSize="@dimen/x30" />
+
+                <TextView
+                    android:id="@+id/basicInfomation_tv_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x18"
+                    android:layout_toLeftOf="@+id/jian6"
+                    android:text="未认证"
+                    android:textColor="@color/color_ff00"
+                    android:textSize="@dimen/x22" />
+
+                <ImageView
+                    android:id="@+id/jian6"
+                    android:layout_width="@dimen/x36"
+                    android:layout_height="@dimen/x36"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/rjt_hui" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_f6f6" />
+
+            <RelativeLayout
+                android:id="@+id/relayout_modifyEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/x36"
+                android:paddingTop="@dimen/x36">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="邮箱"
+                    android:textColor="@color/fontcolor_f3"
+                    android:textSize="@dimen/x30" />
+
+                <TextView
+                    android:id="@+id/basicInfomation_tv_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x18"
+                    android:layout_toLeftOf="@+id/jian7"
+                    android:text="请填写邮箱"
+                    android:textColor="@color/fontcolor_f9"
+                    android:textSize="@dimen/x22" />
+
+                <ImageView
+                    android:id="@+id/jian7"
+                    android:layout_width="@dimen/x36"
+                    android:layout_height="@dimen/x36"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/rjt_hui" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_f6f6" />
+
+            <RelativeLayout
+                android:id="@+id/relayout_modifyQQ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/x36"
+                android:paddingTop="@dimen/x36">
+
+                <TextView
+                    android:id="@+id/tv_userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="QQ"
+                    android:textColor="@color/fontcolor_f3"
+                    android:textSize="@dimen/x30" />
+
+                <TextView
+                    android:id="@+id/basicInfomation_tv_QQnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x18"
+                    android:layout_toLeftOf="@+id/jian8"
+                    android:text="请填写QQ"
+                    android:textColor="@color/fontcolor_f9"
+                    android:textSize="@dimen/x22" />
+
+                <ImageView
+                    android:id="@+id/jian8"
+                    android:layout_width="@dimen/x36"
+                    android:layout_height="@dimen/x36"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/rjt_hui" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_f6f6" />
+            <RelativeLayout
+                android:id="@+id/relayout_modifyWX"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/x36"
+                android:paddingTop="@dimen/x36">
+
+                <TextView
+                    android:id="@+id/tv_userName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="微信"
+                    android:textColor="@color/fontcolor_f3"
+                    android:textSize="@dimen/x30" />
+
+                <TextView
+                    android:id="@+id/basicInfomation_tv_numberWX"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x18"
+                    android:layout_toLeftOf="@+id/jian12"
+                    android:text="请填写微信"
+                    android:textColor="@color/fontcolor_f9"
+                    android:textSize="@dimen/x22" />
+
+                <ImageView
+                    android:id="@+id/jian12"
+                    android:layout_width="@dimen/x36"
+                    android:layout_height="@dimen/x36"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/rjt_hui" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_f6f6" />
+
+            <RelativeLayout
+                android:id="@+id/relayout_chooseCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/x36"
+                android:paddingTop="@dimen/x36">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="所在地区"
+                    android:textColor="@color/fontcolor_f3"
+                    android:textSize="@dimen/x30" />
+
+                <TextView
+                    android:id="@+id/basicInfomation_tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x18"
+                    android:layout_toLeftOf="@+id/jian9"
+                    android:text="请选择你所在地区"
+                    android:textColor="@color/fontcolor_f9"
+                    android:textSize="@dimen/x22" />
+
+                <ImageView
+                    android:id="@+id/jian9"
+                    android:layout_width="@dimen/x36"
+                    android:layout_height="@dimen/x36"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/rjt_hui" />
+            </RelativeLayout>
+            <View
+                android:layout_marginBottom="@dimen/x20"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_f6f6" />
+        </LinearLayout>
+    </widget.BounceScrollView>
+</LinearLayout>

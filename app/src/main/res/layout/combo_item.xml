@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_marginTop="@dimen/x20"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_marginLeft="@dimen/x16"
+    android:layout_marginRight="@dimen/x16"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x146">
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:id="@+id/img_pic"
+        android:minWidth="@dimen/x180"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_marginLeft="@dimen/x12"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_title"
+            android:textSize="@dimen/x32"
+            android:textColor="@color/color_f5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="@dimen/x12"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_price"
+                android:textStyle="bold"
+                android:text="288"
+                android:textSize="@dimen/x32"
+                android:textColor="@color/color_ff00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="元"
+                android:layout_marginLeft="@dimen/x8"
+                android:textColor="@color/color_ff00"
+                android:textSize="@dimen/x20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_baoxi"
+                android:layout_marginLeft="@dimen/x20"
+                android:textSize="@dimen/x20"
+                android:textColor="@color/fontcolor_f9"
+                android:text="包洗"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_price2"
+                android:layout_marginLeft="@dimen/x3"
+                android:layout_marginRight="@dimen/x3"
+                android:text="80"
+                android:textStyle="bold"
+                android:textSize="@dimen/x20"
+                android:textColor="@color/fontcolor_yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_unit"
+                android:textSize="@dimen/x20"
+                android:textColor="@color/fontcolor_f9"
+                android:text="件"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="@dimen/x12"
+                    android:textSize="@dimen/x20"
+                    android:textColor="@color/fontcolor_f9"
+                    android:text="已售"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_price3"
+                    android:layout_marginLeft="@dimen/x3"
+                    android:layout_marginRight="@dimen/x3"
+                    android:text="80"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/x20"
+                    android:textColor="@color/fontcolor_yellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="@dimen/x20"
+                    android:textColor="@color/fontcolor_f9"
+                    android:text="份"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_peopleType"
+            android:textColor="@color/fontcolor_f9"
+            android:layout_marginTop="@dimen/x12"
+            android:text="适合人群：团体用户"
+            android:textSize="@dimen/x28"
+            android:layout_width="match_parent"
+            android:gravity="left"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/fontcolor_f2"
+        android:layout_marginTop="@dimen/x16"
+        android:layout_marginBottom="@dimen/x16"
+        />
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/x16"
+        android:layout_marginRight="@dimen/x16"
+        android:layout_marginBottom="@dimen/x16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/x24"
+            android:textColor="@color/fontcolor_f9"
+            android:text="使用品牌门店："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_storeName"
+            android:layout_toRightOf="@+id/tv"
+            android:textSize="@dimen/x24"
+            android:textColor="@color/fontcolor_f6"
+            android:text="岷江路UCC1号干洗"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/pinpai"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/x24"
+            android:textColor="@color/fontcolor_f9"
+            android:text="洗涤品牌："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginLeft="@dimen/x8"
+            android:layout_toRightOf="@+id/pinpai"
+            android:id="@+id/brand_img"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x_42" />
+        <TextView
+            android:background="@drawable/combo_rect"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="立即购买"
+            android:textSize="@dimen/x24"
+            android:paddingTop="@dimen/x12"
+            android:paddingBottom="@dimen/x12"
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/x36"
+            android:paddingRight="@dimen/x36"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:indicator="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/relayout_top"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x96">
+        <RelativeLayout
+            android:id="@+id/main_imgUser"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/x140"
+            android:layout_height="match_parent">
+            <ImageView
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/user"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/x24"
+                android:layout_width="@dimen/x46"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/x34"
+            android:textColor="@color/color_yellow"
+            android:textStyle="bold"
+            android:text="优e管家"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/img_message"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x20"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/msg"
+            android:layout_width="@dimen/x46"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/line1"
+        android:layout_below="@+id/relayout_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/fontcolor_f2"
+        />
+    <ScrollView
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x390">
+                <widget.RecommentViewPager
+                    android:id="@+id/recomment_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_height="@dimen/x360" />
+
+                <View
+                    android:background="#f2f2f2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x30"
+                    android:layout_alignParentBottom="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x60"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@drawable/notice_white_rect"
+                    android:gravity="center_vertical|left"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/x16"
+                    android:paddingRight="@dimen/x16">
+
+                    <ImageView
+                        android:src="@mipmap/notice_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop" />
+
+                    <widget.MarqueeTextView
+                        android:id="@+id/marqueeTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x8"
+                        android:text="通知"
+                        android:visibility="gone"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/x24" />
+
+                    <widget.VerticalTextview
+                        android:layout_marginLeft="@dimen/x8"
+                        android:id="@+id/tv_verticalTextview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x8"
+                android:background="#f2f2f2" />
+
+            <widget.NoScrollGridView
+                android:id="@+id/item_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x24"
+                android:layout_marginLeft="@dimen/x24"
+                android:numColumns="4"
+                android:verticalSpacing="@dimen/x36"></widget.NoScrollGridView>
+            <LinearLayout
+                android:layout_marginTop="@dimen/x16"
+                android:id="@+id/layout_saoma"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="@dimen/x108"
+                android:layout_marginLeft="@dimen/x108"
+                android:layout_marginBottom="@dimen/x20"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/main_erweima_rect_home"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x86">
+                <ImageView
+                    android:src="@mipmap/saoma"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_width="@dimen/x32"
+                    android:layout_height="@dimen/x32" />
+                <TextView
+                    android:layout_marginLeft="@dimen/x32"
+                    android:gravity="center"
+                    android:textSize="@dimen/x28"
+                    android:text="扫码开箱•存/取件"
+                    android:textColor="#ffffff"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="@dimen/x88" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingBottom="@dimen/x12"
+                android:paddingLeft="@dimen/x20"
+                android:paddingRight="@dimen/x20"
+                android:background="#f2f2f2"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/img_combo"
+                    android:layout_marginBottom="@dimen/x12"
+                    android:layout_marginTop="@dimen/x12"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <widget.NoScrollListView
+                    android:id="@+id/listView_combo"
+                    android:background="#f2f2f2"
+                    android:divider="#f2f2f2"
+                    android:dividerHeight="@dimen/x12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </widget.NoScrollListView>
+                <RelativeLayout
+                    android:layout_marginBottom="@dimen/x12"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                       android:layout_marginBottom="@dimen/x12"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/tv_more"
+                        android:text="查看更多"
+                        android:paddingLeft="@dimen/x32"
+                        android:paddingRight="@dimen/x32"
+                        android:paddingBottom="@dimen/x12"
+                        android:paddingTop="@dimen/x12"
+                        android:textColor="@color/fontcolor_f9"
+                        android:gravity="center"
+                        android:background="@drawable/f2_rect_ra"
+                        android:layout_width="@dimen/x260"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:paddingBottom="@dimen/x12"
+                    android:orientation="vertical"
+                    android:background="@drawable/popsimple_write_rect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/img_step"
+                            android:layout_marginLeft="@dimen/x20"
+                            android:layout_margin="@dimen/x20"
+                            android:layout_marginBottom="@dimen/x12"
+                            android:layout_marginTop="@dimen/x12"
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                         <TextView
+                             android:id="@+id/more_detail"
+                             android:background="@drawable/f2_rect_ra"
+                             android:gravity="center"
+                             android:layout_gravity="center_horizontal"
+                             android:layout_marginTop="@dimen/x28"
+                             android:drawableLeft="@mipmap/ico2"
+                             android:text="更多洗涤详情"
+                             android:paddingLeft="@dimen/x28"
+                             android:paddingRight="@dimen/x28"
+                             android:drawablePadding="@dimen/x8"
+                             android:layout_width="wrap_content"
+                             android:layout_height="@dimen/x66" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/x20"
+                    android:background="@drawable/popsimple_write_rect"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x340">
+                <widget.RecommentViewPager
+                    android:id="@+id/recomment_viewpager_evaluate"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x340" />
+                    <widget.Indicator
+                        android:id="@+id/indicator"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/x36"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/x36"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/x72"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/tv_evaluate_more"
+                        android:text="更多评价"
+                        android:paddingLeft="@dimen/x32"
+                        android:paddingRight="@dimen/x32"
+                        android:paddingBottom="@dimen/x16"
+                        android:paddingTop="@dimen/x16"
+                        android:textColor="@color/fontcolor_f9"
+                        android:gravity="center"
+                        android:background="@drawable/f2_rect_ra2"
+                        android:layout_width="@dimen/x260"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

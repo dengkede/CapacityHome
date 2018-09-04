@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/popsimple_write_rect"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/pop_tvWithdrawal"
+    android:paddingTop="@dimen/x36"
+    android:paddingBottom="@dimen/x36"
+    android:text="提现记录"
+    android:textColor="@color/fontcolor_f3"
+    android:background="@color/white"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/fontcolor_f2"
+        />
+    <TextView
+        android:id="@+id/pop_tvConsumption"
+        android:paddingTop="@dimen/x36"
+        android:paddingBottom="@dimen/x36"
+        android:text="洗衣卷消费"
+        android:textColor="@color/fontcolor_f3"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/fontcolor_f2"
+        />
+    <TextView
+        android:id="@+id/pop_tvRecharge"
+        android:paddingTop="@dimen/x36"
+        android:paddingBottom="@dimen/x36"
+        android:text="余额充值"
+        android:textColor="@color/fontcolor_f3"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/fontcolor_f2"
+        />
+    <TextView
+        android:id="@+id/pop_tvBalance"
+        android:paddingTop="@dimen/x36"
+        android:paddingBottom="@dimen/x36"
+        android:text="余额消费"
+        android:textColor="@color/fontcolor_f3"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/fontcolor_f2"
+        />
+</LinearLayout>

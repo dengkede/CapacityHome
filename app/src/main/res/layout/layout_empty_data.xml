@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/smart"
+    android:text="没有内容"
+    android:textSize="@dimen/x32"
+    android:textColor="@color/fontcolor_f9"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</TextView>

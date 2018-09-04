@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#00000000"
+    android:id="@+id/layout_pop_parent"
+    android:layout_height="match_parent">
+
+    <widget.BounceScrollView
+        android:layout_below="@+id/layout_top"
+        android:id="@+id/scrollView"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+<EditText
+    android:id="@+id/doubtPop_etContent"
+    android:padding="@dimen/x28"
+    android:hint="在此填写您的问题或评价"
+    android:gravity="left|top"
+    android:textColor="@color/fontcolor_f9"
+    android:textSize="@dimen/x26"
+    android:background="@null"
+    android:layout_width="match_parent"
+    android:minHeight="@dimen/x194"
+    android:layout_height="wrap_content" />
+            <widget.NoScrollGridView
+                android:id="@+id/doubtPop_grid"
+                android:background="@color/white"
+                android:numColumns="4"
+                android:verticalSpacing="@dimen/x12"
+                android:horizontalSpacing="@dimen/x12"
+                android:layout_marginLeft="@dimen/x28"
+                android:layout_marginBottom="@dimen/x28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></widget.NoScrollGridView>
+            <TextView
+                android:id="@+id/tv_note"
+                android:text="如果有照片请上传，单张最大2M，最多8张图。"
+                android:gravity="center_vertical|left"
+                android:textColor="@color/fontcolor_f9"
+                android:textSize="@dimen/x18"
+                android:paddingLeft="@dimen/x28"
+                android:layout_marginTop="@dimen/x16"
+                android:layout_marginBottom="@dimen/x16"
+                android:paddingRight="@dimen/x28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </widget.BounceScrollView>
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/x100"-->
+        <!--android:background="@color/fontcolor_f2"-->
+        <!--/>-->
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x96">
+        <TextView
+            android:id="@+id/tv_cancl"
+            android:text="取消"
+            android:gravity="center"
+            android:textColor="@color/fontcolor_f9"
+            android:paddingLeft="@dimen/x28"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/x28"
+            android:paddingRight="@dimen/x28"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textColor="@color/fontcolor_f3"
+            android:id="@+id/top_submit_btn"
+            android:paddingLeft="@dimen/x28"
+            android:paddingRight="@dimen/x28"
+            android:textSize="@dimen/x28"
+            android:layout_alignParentRight="true"
+            android:text="提交"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</RelativeLayout>

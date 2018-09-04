@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x40"
+        android:layout_marginLeft="@dimen/x28"
+        android:layout_marginRight="@dimen/x28"
+        android:layout_marginTop="@dimen/x40">
+        <ImageView
+            android:id="@+id/img_managePic"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/img_user"
+            android:layout_width="@dimen/x56"
+            android:layout_height="@dimen/x56" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_feedback_userName"
+            android:layout_toRightOf="@+id/img_managePic"
+            android:textColor="@color/fontcolor_f3"
+            android:layout_marginLeft="@dimen/x16"
+            android:textSize="@dimen/x28"
+            android:text="用户昵称/注册手机"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:textColor="@color/fontcolor_f9"
+            android:layout_marginRight="@dimen/x8"
+            android:layout_toLeftOf="@+id/tv_feedback_data"
+            android:textSize="@dimen/x26"
+            android:text="周一"
+            android:id="@+id/tv_feedback_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_feedback_data"
+            android:textColor="@color/fontcolor_f9"
+            android:layout_marginRight="@dimen/x8"
+            android:layout_toLeftOf="@+id/tv_feedbak_state2"
+            android:textSize="@dimen/x26"
+            android:text="2018/02/27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_feedback_time"
+            android:textColor="@color/fontcolor_f9"
+            android:layout_marginLeft="@dimen/x8"
+            android:layout_toRightOf="@+id/tv_feedback_data"
+            android:textSize="@dimen/x22"
+            android:text="07:34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_feedback_type"
+            android:textColor="@color/fontcolor_f9"
+            android:layout_marginLeft="@dimen/x8"
+            android:layout_toRightOf="@+id/tv_feedback_data"
+            android:textSize="@dimen/x26"
+            android:text="意见反馈"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_feedbak_state2"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/x22"
+            android:text="待审"
+            android:textColor="@color/fontcolor_d8"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:background="@color/fontcolor_f2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        />
+    <RelativeLayout
+        android:id="@+id/layout_them"
+        android:visibility="gone"
+        android:paddingRight="@dimen/x28"
+        android:paddingLeft="@dimen/x28"
+        android:layout_marginBottom="@dimen/x24"
+        android:layout_marginTop="@dimen/x34"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:id="@+id/tv_feedback_questionType"
+            android:textColor="@color/fontcolor_f6"
+            android:layout_centerVertical="true"
+            android:text="[账户安全]"
+            android:textSize="@dimen/x26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="@dimen/x8"
+            android:layout_toRightOf="@+id/tv_feedback_questionType"
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_feedback_state"
+            android:textColor="@color/color_ff00"
+            android:textSize="@dimen/x26"
+            android:text="[未读]"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_feedback_questionTitle"
+            android:layout_toRightOf="@+id/tv_feedback_state"
+            android:layout_marginLeft="@dimen/x8"
+            android:textColor="@color/fontcolor_f6"
+            android:text="密码记不住了"
+            android:textSize="@dimen/x26"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/x8"
+            android:id="@+id/tv_feedback_questionState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_feedback_questionTitle"
+            android:text="[未回复]"
+            android:textSize="@dimen/x26"
+            android:textColor="@color/color_ff00" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/x24"
+        android:layout_marginBottom="@dimen/x24"
+        android:layout_marginLeft="@dimen/x28"
+        android:layout_marginRight="@dimen/x28"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="@dimen/x6"
+            android:id="@+id/tv_feedback_questionContent"
+            android:text="管理员可不可以帮我重置一下支付密码？我电话掉了，更换了电话号码，怎么才能找回密码啊？GM请给我一个充值流程。"
+            android:textSize="@dimen/x27"
+            android:lineSpacingExtra="@dimen/x10"
+            android:gravity="center_vertical|left"
+            android:textColor="@color/fontcolor_f9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_file"
+        android:paddingLeft="@dimen/x28"
+        android:text="[附件1]"
+        android:textSize="@dimen/x26"
+        android:textColor="@color/color_38"
+        android:layout_marginBottom="@dimen/x26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <widget.NoScrollGridView
+        android:id="@+id/tv_feedback_gridFile"
+        android:numColumns="4"
+        android:horizontalSpacing="@dimen/x18"
+        android:verticalSpacing="@dimen/x18"
+        android:layout_marginLeft="@dimen/x28"
+        android:layout_marginRight="@dimen/x28"
+        android:layout_marginBottom="@dimen/x24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></widget.NoScrollGridView>
+</LinearLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popsimple_write_rect"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_choose"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x92"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_priceRule"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="计费规则"
+            android:textColor="@color/fontcolor_yellow"
+            android:textSize="@dimen/x28" />
+
+        <View
+            android:layout_width="@dimen/x1"
+            android:layout_height="match_parent"
+            android:background="#e2e2e2" />
+
+        <TextView
+            android:id="@+id/tv_useRule"
+            android:text="使用细则"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/fontcolor_f3"
+            android:textSize="@dimen/x28" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_line"
+        android:layout_below="@+id/layout_choose"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x3"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/tv_line1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/x3"
+            android:layout_weight="1"
+            android:background="@color/fontcolor_yellow"
+           />
+
+        <View
+            android:id="@+id/tv_line2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/x1"
+            android:layout_weight="1"
+            android:background="#e2e2e2"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/relayout_viewpager"
+        android:layout_below="@+id/layout_line"
+        android:layout_marginTop="@dimen/x36"
+        android:layout_marginLeft="@dimen/x36"
+        android:layout_marginRight="@dimen/x36"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x68"
+        android:background="#fff" >
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x68" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/line"
+        android:layout_below="@+id/relayout_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:background="#e3e3e3"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/x28"
+            android:layout_marginBottom="@dimen/x28"
+            />
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:id="@+id/points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_below="@+id/line"
+        android:layout_marginBottom="@dimen/x16"
+        android:gravity="center"
+        android:textSize="@dimen/x28"
+        android:text="以下是《米兰人洗衣》的定价"
+        android:textColor="@color/fontcolor_f6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:layout_above="@+id/tv_agree"
+        android:id="@+id/listview_brand"
+        android:layout_below="@+id/tv_title"
+        android:divider="#00000000"
+        android:dividerHeight="@dimen/x1"
+        android:clipToPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+    <widget.BounceScrollView
+        android:id="@+id/scrollView_agreement"
+        android:layout_below="@+id/layout_line"
+        android:background="@color/white"
+        android:layout_above="@+id/tv_agree"
+        android:scrollbars="none"
+        android:visibility="gone"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_alignParentTop="true"
+                android:lineSpacingExtra = "@dimen/x15"
+                android:layout_marginTop="@dimen/x36"
+                android:id="@+id/tv_content"
+                android:textSize="14sp"
+                android:textColor="@color/fontcolor_f6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </widget.BounceScrollView>
+    <LinearLayout
+        android:visibility="invisible"
+        android:layout_below="@+id/layout_line"
+        android:layout_above="@+id/tv_agree"
+        android:id="@+id/layout_webView"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:progressDrawable="@drawable/pg" />
+    <WebView
+        android:id="@+id/webView"
+        android:layout_below="@+id/layout_line"
+        android:layout_above="@+id/tv_agree"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+    </LinearLayout>
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:text="我知道了"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:paddingLeft="@dimen/x26"
+        android:paddingRight="@dimen/x26"
+        android:background="@drawable/home_rect_sloid_yellow2"
+        android:id="@+id/tv_agree"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/x26"
+        android:layout_width="wrap_content"
+        android:minWidth="@dimen/x280"
+        android:layout_height="@dimen/x82" />
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popsimple_write_rect"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x36"
+        android:layout_marginTop="@dimen/x36"
+        android:gravity="center"
+        android:text="选择你喜欢的品牌"
+        android:textColor="@color/fontcolor_f3"
+        android:textSize="@dimen/x28" />
+
+    <GridView
+        android:id="@+id/listview_likeBrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x36"
+        android:layout_marginRight="@dimen/x36"
+        android:horizontalSpacing="@dimen/x12"
+        android:verticalSpacing="@dimen/x12"
+        android:numColumns="2"></GridView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x36"
+        android:gravity="center"
+        android:text="下单时默认使用您当前选择的洗衣品牌"
+        android:textColor="@color/fontcolor_f9"
+        android:textSize="@dimen/x24" />
+
+    <TextView
+        android:id="@+id/tv_agree"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="@dimen/x82"
+        android:layout_marginLeft="@dimen/x26"
+        android:layout_marginBottom="@dimen/x26"
+        android:layout_marginRight="@dimen/x26"
+        android:layout_marginTop="@dimen/x46"
+        android:background="@drawable/home_rect_sloid_yellow2"
+        android:gravity="center"
+        android:minWidth="@dimen/x280"
+        android:paddingLeft="@dimen/x26"
+        android:paddingRight="@dimen/x26"
+        android:text="确定选择"
+        android:textColor="#ffffff" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x114"
+    android:gravity="center"
+    android:background="@drawable/marker_rect"
+    android:layout_height="@dimen/x34">
+<TextView
+    android:textColor="@color/white"
+    android:textSize="@dimen/x20"
+    android:text="离你最近"
+    android:gravity="center"
+    android:layout_width="@dimen/x114"
+    android:layout_height="@dimen/x34" />
+</LinearLayout>

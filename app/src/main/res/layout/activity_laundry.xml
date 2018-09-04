@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:id="@+id/layout_parent"
+    tools:context="com.example.administrator.capacityhome.laundry.LaundryActivity">
+
+    <include layout="@layout/layout_toptitle2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x36"
+        android:paddingLeft="@dimen/x28"
+        android:paddingRight="@dimen/x28"
+        android:text="洗衣服务"
+        android:textColor="@color/fontcolor_f3"
+        android:textSize="@dimen/x42"
+        android:textStyle="bold" />
+
+    <com.chanven.lib.cptr.PtrClassicFrameLayout
+        android:id="@+id/pcf_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listview_laundy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f2f2f2"
+            android:clipToPadding="false"
+            android:divider="#f2f2f2"
+            android:dividerHeight="@dimen/x1" />
+    </com.chanven.lib.cptr.PtrClassicFrameLayout>
+
+    <include
+        android:id="@+id/layout_empty"
+        layout="@layout/layout_empty_data" />
+</LinearLayout>

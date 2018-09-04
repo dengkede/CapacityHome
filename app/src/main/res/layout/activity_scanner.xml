@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_parent"
+    >
+    <FrameLayout
+        android:id="@+id/erweima_framlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_bottom">
+
+        <SurfaceView
+            android:id="@+id/scanner_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+        <google.zxing.view.ViewfinderView
+            android:id="@+id/viewfinder_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:corner_color="@color/corner_color"
+            app:frame_color="@color/viewfinder_frame"
+            app:label_text="二维码/条形码扫描"
+            app:label_text_color="@color/colorAccent"
+            app:laser_color="@color/laser_color"
+            app:mask_color="@color/viewfinder_mask"
+            app:result_color="@color/result_view"
+            app:result_point_color="@color/result_point_color" />
+        <TextView
+            android:id="@+id/saomiao_tvUrgent"
+            android:visibility="gone"
+            android:background="@drawable/white_rect"
+            android:layout_marginBottom="@dimen/x32"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="点击加急"
+            android:textSize="@dimen/x22"
+            android:textColor="@color/fontcolor_f3"
+            android:gravity="center"
+            android:minWidth="@dimen/x182"
+            android:paddingLeft="@dimen/x12"
+            android:paddingRight="@dimen/x12"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x58" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2c5394"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/x20"
+            android:paddingTop="@dimen/x20">
+<RelativeLayout
+    android:layout_marginLeft="@dimen/x28"
+    android:background="@drawable/main_circle"
+    android:layout_width="@dimen/x42"
+    android:layout_height="@dimen/x42">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/x24"
+                android:layout_height="@dimen/x24"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/random_code" />
+</RelativeLayout>
+            <TextView
+                android:layout_marginRight="@dimen/x28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x6"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="如扫码无响应，请输入随机码开箱（存件用）"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x28" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x296"
+            android:background="#191919"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layout_createRandomCode"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+               <RelativeLayout
+                   android:background="@drawable/main_circle"
+                   android:layout_width="@dimen/x114"
+                   android:layout_height="@dimen/x114">
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/random_code" />
+               </RelativeLayout>
+                <TextView
+                    android:id="@+id/tv_randomCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x30"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="生成随机码"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x28" />
+            </LinearLayout>
+<LinearLayout
+    android:id="@+id/layout_handWar"
+    android:orientation="vertical"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:background="@drawable/main_circle"
+        android:layout_width="@dimen/x114"
+        android:layout_height="@dimen/x114">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/hand_ertical" />
+    </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/x30"
+                android:gravity="center"
+                android:text="打开手电筒"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x28" />
+</LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/toolbar_scanner" />
+</RelativeLayout>

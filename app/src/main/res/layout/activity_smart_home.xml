@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:paddingLeft="@dimen/x28"
+    android:paddingRight="@dimen/x28"
+    tools:context="com.example.administrator.capacityhome.smarthome.SmartHomeActivity">
+<include layout="@layout/layout_toptitle"
+    />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x58"
+        android:layout_marginTop="@dimen/x36"
+        android:text="智能居家"
+        android:textStyle="bold"
+        android:textColor="@color/fontcolor_f3"
+        android:textSize="@dimen/x48" />
+
+    <RelativeLayout
+        android:layout_marginBottom="@dimen/x26"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv"
+            android:textSize="@dimen/x28"
+            android:text="拥有智能门锁（道）："
+            android:textColor="@color/fontcolor_f9"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_homeCount"
+            android:layout_toRightOf="@+id/tv"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/x34"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="@color/fontcolor_f3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvAbnormal"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/x28"
+            android:paddingRight="@dimen/x28"
+            android:paddingTop="@dimen/x22"
+            android:paddingBottom="@dimen/x22"
+            android:textSize="14sp"
+            android:text="有异常"
+            android:background="@drawable/smarthome_sliod"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/color_e0"
+        />
+    <GridView
+        android:paddingTop="@dimen/x26"
+        android:background="#ffffff"
+        android:id="@+id/grid_smartHome"
+        android:layout_width="match_parent"
+        android:numColumns="2"
+        android:horizontalSpacing="@dimen/x18"
+        android:verticalSpacing="@dimen/x34"
+        android:layout_height="wrap_content">
+    </GridView>
+   <include layout="@layout/layout_empty_data"
+       android:id="@+id/layout_empty"
+       />
+</LinearLayout>

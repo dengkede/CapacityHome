@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="slidepadding" format="dimension" />
+    <declare-styleable name="SlidingLayout">
+        <attr name="slidepadding" />
+    </declare-styleable>
+    <declare-styleable name="ViewfinderView">
+        <attr name="corner_color" format="color" />
+        <attr name="laser_color" format="color" />
+        <attr name="frame_color" format="color" />
+        <attr name="mask_color" format="color" />
+        <attr name="result_point_color" format="color" />
+        <attr name="result_color" format="color" />
+        <attr name="label_text_color" format="color" />
+        <attr name="label_text" format="string" />
+        <attr name="label_text_size" format="float" />
+    </declare-styleable>
+
+        <declare-styleable name="XCircleIndicator">
+            <!-- 被选中圆点的颜色 -->
+            <attr name="fillColor" format="color" />
+            <!-- 未选中圆点的颜色 -->
+            <attr name="strokeColor" format="color" />
+            <!-- 圆点的大小 -->
+            <attr name="radius" format="dimension" />
+            <!-- 圆点间间距的大小 -->
+            <attr name="circleInterval" format="dimension" />
+        </declare-styleable>
+
+    <attr name="selectedColor" format="color"/>
+
+    <attr name="unselectedColor" format="color"/>
+
+    <declare-styleable name="Indicator">
+
+        <attr name="selectedColor"/>
+
+        <attr name="unselectedColor"/>
+
+    </declare-styleable>
+
+</resources>

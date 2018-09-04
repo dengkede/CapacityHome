@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/x28"
+    android:paddingRight="@dimen/x28"
+    android:background="@drawable/popsimple_write_rect"
+    android:layout_height="match_parent">
+<TextView
+    android:text="正在下载新版本"
+    android:textColor="@color/fontcolor_f3"
+    android:textSize="@dimen/x30"
+    android:gravity="center_vertical|left"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/x96" />
+    <widget.NumberProgressView
+        android:layout_marginTop="@dimen/x80"
+        android:id="@+id/numberProgress"
+        android:background="#ff1a80"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x16" />
+    <RelativeLayout
+        android:layout_marginBottom="@dimen/x40"
+        android:layout_marginTop="@dimen/x8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text=""
+            android:id="@+id/tv_progress"
+            android:textColor="@color/fontcolor_f6"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginRight="@dimen/x8"
+            android:id="@+id/tv_current"
+            android:text=""
+            android:layout_toLeftOf="@+id/fen"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/x24"
+            android:textColor="@color/fontcolor_f6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/fen"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/x24"
+            android:textColor="@color/fontcolor_f9"
+            android:text="/"
+            android:layout_marginRight="@dimen/x8"
+            android:layout_toLeftOf="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_total"
+            android:text=""
+            android:textSize="@dimen/x24"
+            android:textColor="@color/fontcolor_f6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>
