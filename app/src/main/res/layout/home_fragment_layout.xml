@@ -242,6 +242,8 @@
                     android:layout_marginTop="@dimen/x20"
                     android:background="@drawable/popsimple_write_rect"
                     android:layout_width="match_parent"
+                    android:paddingTop="@dimen/x12"
+                    android:paddingBottom="@dimen/x12"
                     android:layout_height="@dimen/x340">
                 <widget.RecommentViewPager
                     android:id="@+id/recomment_viewpager_evaluate"
@@ -251,7 +253,7 @@
                         android:id="@+id/indicator"
                         android:layout_centerHorizontal="true"
                         android:layout_alignParentBottom="true"
-                        android:layout_marginBottom="@dimen/x36"
+                        android:layout_marginBottom="@dimen/x24"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                 </RelativeLayout>

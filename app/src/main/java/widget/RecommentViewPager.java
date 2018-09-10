@@ -14,6 +14,7 @@ import android.view.MotionEvent;
 public class RecommentViewPager extends ViewPager implements OnGestureListener {
 
     private GestureDetector mDetector;
+
     public RecommentViewPager(Context context, AttributeSet attrs) {
         super(context, attrs);
         GestureDetector detector = new GestureDetector(context, this);
@@ -35,7 +36,7 @@ public class RecommentViewPager extends ViewPager implements OnGestureListener {
 
     @Override
     public boolean onSingleTapUp(MotionEvent e) {
-        if(listener != null) {
+        if (listener != null) {
             listener.setOnSimpleClickListenr(getCurrentItem());
         }
         return true;
@@ -59,6 +60,7 @@ public class RecommentViewPager extends ViewPager implements OnGestureListener {
     }
 
     private onSimpleClickListener listener;
+
     public interface onSimpleClickListener {
         void setOnSimpleClickListenr(int position);
     }

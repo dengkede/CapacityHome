@@ -1185,11 +1185,16 @@ public class OrderDetailActivity extends BaseTakePhotoActivity implements View.O
             } else {
                 tv_doubt_content.setText("未编写");
             }
-            if (!StringUtils.isEmpty(jsonObject.getString("pics")) || !StringUtils.isEmpty(jsonObject.getString("videos"))) {
+            if (!StringUtils.isEmpty(jsonObject.getString("pics"))&&!jsonObject.getString("pics").equals("null")) {
                 tv_doubt_file.setVisibility(View.VISIBLE);
                 tv_doubt_file.setText("[附件]");
             } else {
-                tv_doubt_file.setVisibility(View.GONE);
+                if(!StringUtils.isEmpty(jsonObject.getString("videos"))&&!jsonObject.getString("videos").equals("null")){
+                    tv_doubt_file.setVisibility(View.VISIBLE);
+                    tv_doubt_file.setText("[附件]");
+                }else {
+                    tv_doubt_file.setVisibility(View.GONE);
+                }
             }
             if (!StringUtils.isEmpty(jsonObject.getString("refstatus"))) {
                 if (!StringUtils.isEmpty(jsonObject.getString("refstatus")) && !jsonObject.getString("refstatus").equals("0")) {

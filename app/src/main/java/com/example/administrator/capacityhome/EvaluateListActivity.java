@@ -3,6 +3,7 @@ package com.example.administrator.capacityhome;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.chanven.lib.cptr.PtrClassicFrameLayout;
@@ -25,6 +26,7 @@ import java.util.Map;
 import adapter.AllEvaluateListAdapter;
 import http.RequestTag;
 import utils.Md5;
+import utils.StringUtils;
 import widget.DefaultLoadMoreViewFooter_normal;
 
 /**
@@ -52,6 +54,23 @@ public class EvaluateListActivity extends BaseActivity implements View.OnClickLi
         listview_evaluate.setAdapter(adapter);
         findViewById(R.id.tv_evaluate).setOnClickListener(this);
         findViewById(R.id.relayout_imgBack).setOnClickListener(this);
+        listview_evaluate.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    try {
+                        if (!StringUtils.isEmpty(list.get(position).getString("pics"))&& !list.get(position).getString("pics").equals("null")) {
+                            ArrayList lists = new ArrayList();
+                            for (int i = 0; i < list.get(position).getString("pics").split(",").length; i++) {
+                                lists.add(list.get(position).getString("pics").split(",")[i]);
+                            }
+                            startActivity_ImagrPager(EvaluateListActivity.this, 0, lists, false);
+                        }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        });
 
     }
 

@@ -295,7 +295,7 @@ public class FeedBackDetailActivity2 extends BaseTakePhotoActivity implements Vi
                     if(layout_empty.getVisibility()==View.VISIBLE) {
                         layout_empty.setVisibility(View.GONE);
                     }
-                    Log.d("response", response.toString());
+                    Log.d("response222", response.toString());
                     if (isUpdate) {
                         pcf_container.refreshComplete();
                     }

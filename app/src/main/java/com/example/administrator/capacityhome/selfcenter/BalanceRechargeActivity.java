@@ -602,11 +602,12 @@ public class BalanceRechargeActivity extends BaseActivity implements View.OnClic
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == 2) {
-            quary_money();
-        } else if (requestCode == 4) {
+        if (requestCode == 4) {
             quary_money();
         }
+//        else if (requestCode == 2) {
+//            quary_money();
+//        }
     }
 
     @Override

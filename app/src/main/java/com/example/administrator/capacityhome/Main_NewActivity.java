@@ -561,7 +561,7 @@ public class Main_NewActivity extends BaseActivity implements View.OnClickListen
                 PackageManager.PERMISSION_GRANTED != checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
             requestPermissions(perms, PERMS_REQUEST_CODE);
         } else {
-            check_update("1.3.5");
+            check_update("1.3.6");
         }
         if (MyApplication.getUid() != null) {
             getRepleyList();
@@ -2149,7 +2149,7 @@ public class Main_NewActivity extends BaseActivity implements View.OnClickListen
             case PERMS_REQUEST_CODE:
                 boolean storageAccepted = grantResults[0] == PackageManager.PERMISSION_GRANTED;
                 if (storageAccepted) {
-                    check_update("1.3.5");
+                    check_update("1.3.6");
                 } else {
                     toastMessage("请打开相关权限，不然部分功能更能无法正常使用。");
                 }

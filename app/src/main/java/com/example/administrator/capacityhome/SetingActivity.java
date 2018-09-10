@@ -98,7 +98,7 @@ public class SetingActivity extends BaseActivity implements View.OnClickListener
         switch (v.getId()) {
             case R.id.relayout_update:
                 //检查更新
-                check_update("1.3.5");
+                check_update("1.3.6");
 //                showUpdaloadDialog("");
                 break;
             case R.id.relayout_about:

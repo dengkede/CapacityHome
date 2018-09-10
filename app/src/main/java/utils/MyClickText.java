@@ -17,6 +17,7 @@ public class MyClickText extends ClickableSpan {
      private Click click;
     public MyClickText(Context context,Click click) {
         this.context = context;
+        this.click = click;
     }
 
     @Override

@@ -513,19 +513,19 @@ public class HomeFragment extends BaseFragment implements RecommentViewPager.onS
                             final float yDiff = Math.abs(y - mLastMotionY_eva);
                             xDistance_eva += xDiff;
                             yDistance_eva += yDiff;
-                            float dx = xDistance_eva - yDistance_eva;
-                            /** 左右滑动避免和下拉刷新冲突 **/
-                            if (xDistance_eva > yDistance_eva || Math.abs(xDistance_eva - yDistance_eva) < 0.00001f) {
-                                mIsBeingDragged = true;
-                                mLastMotionX_eva = x;
-                                mLastMotionY_eva = y;
-                                ((ViewParent) v.getParent()).requestDisallowInterceptTouchEvent(true);
-
-                            } else {
-                                mIsBeingDragged = false;
-                                ((ViewParent) v.getParent()).requestDisallowInterceptTouchEvent(false);
-
-                            }
+//                            float dx = xDistance_eva - yDistance_eva;
+//                            /** 左右滑动避免和下拉刷新冲突 **/
+//                            if (xDistance_eva > yDistance_eva || Math.abs(xDistance_eva - yDistance_eva) < 0.00001f) {
+//                                mIsBeingDragged = true;
+//                                mLastMotionX_eva = x;
+//                                mLastMotionY_eva = y;
+//                                ((ViewParent) v.getParent()).requestDisallowInterceptTouchEvent(true);
+//
+//                            } else {
+//                                mIsBeingDragged = false;
+//                                ((ViewParent) v.getParent()).requestDisallowInterceptTouchEvent(false);
+//
+//                            }
                             break;
                         case MotionEvent.ACTION_UP:
                             break;

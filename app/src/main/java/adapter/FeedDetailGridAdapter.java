@@ -3,6 +3,7 @@ package adapter;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v4.content.ContextCompat;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -100,8 +101,16 @@ public class FeedDetailGridAdapter extends BaseAdapter {
             @Override
             public void onClick(View v) {
                 if(!list.get(position).contains(".mp4")) {
-                    ((BaseActivity) context).startActivity_ImagrPager(context, position, list, false);
+                    ArrayList<String> llist = new ArrayList<>();
+                    for (int i = 0;i<list.size();i++){
+                        if(!list.get(i).contains(".mp4")){
+                            llist.add(list.get(i));
+                        }
+                    }
+                    ((BaseActivity) context).startActivity_ImagrPager(context, position, llist, false);
                 }else{
+                    Log.d("uoqowoertoiw",RequestTag.BaseVieoUrl+list.get(position)+",,"+list.get(position));
+
                     context.startActivity(new Intent(context, VideoPlayActivity.class).putExtra("path_video",RequestTag.BaseVieoUrl+list.get(position)));
                 }
             }

@@ -86,7 +86,7 @@
             android:layout_centerVertical="true"
             android:layout_marginRight="@dimen/x20"
             android:layout_toLeftOf="@+id/img_1"
-            android:text="当前版本Ver1.3.5"
+            android:text="当前版本Ver1.3.6"
             android:textColor="@color/fontcolor_f9"
             android:textSize="@dimen/x24" />
 

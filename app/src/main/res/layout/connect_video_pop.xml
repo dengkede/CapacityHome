@@ -80,6 +80,7 @@
             android:orientation="horizontal"
             android:layout_height="@dimen/x62">
             <EditText
+                android:inputType="textPassword"
                 android:id="@+id/et_password"
                 android:textSize="@dimen/x24"
                 android:hint="请输入查看密码"

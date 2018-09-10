@@ -63,10 +63,11 @@ public class StorePriceFragment extends BaseFragment implements View.OnClickList
     private List<JSONObject> list_type = new ArrayList<>();
     private List<JSONObject> list_brand = new ArrayList<>();//总的品牌数据源
     private int brand_index = 0;//默认喜欢品牌的索引
-    private int[] tvIds = new int[]{R.id.tv_1, R.id.tv_2, R.id.tv_3, R.id.tv_4};
-    private TextView[] textViews = new TextView[tvIds.length];
-    private int[] Id = new int[]{R.id.line_1, R.id.line_2, R.id.line_3, R.id.line_4};
-    private View[] view_lines = new View[Id.length];
+    //    private int[] tvIds = new int[]{R.id.tv_1, R.id.tv_2, R.id.tv_3, R.id.tv_4};
+//    private TextView[] textViews = new TextView[tvIds.length];
+//    private int[] Id = new int[]{R.id.line_1, R.id.line_2, R.id.line_3, R.id.line_4};
+//    private View[] view_lines = new View[Id.length];
+    private LinearLayout layout_parent_tv;
     private int index = 0;
     private int currentIndex = 0;
     private PopupWindow popupWindow;
@@ -130,6 +131,7 @@ public class StorePriceFragment extends BaseFragment implements View.OnClickList
     }
 
     private void initView() {
+        layout_parent_tv = findViewById(R.id.layout_parent_tv);
         findViewById(R.id.tv_artical).setOnClickListener(this);
         tv_count = findViewById(R.id.tv_count);
         layout_parent = findViewById(R.id.layout_parent);
@@ -147,7 +149,7 @@ public class StorePriceFragment extends BaseFragment implements View.OnClickList
                         getBrandList(list_brand.get(i).getString("id"));
                         list_prospect.clear();
                         tv_prospectPrice.setText("0");
-                        if(tv_totalPrice!=null) {
+                        if (tv_totalPrice != null) {
                             tv_totalPrice.setText("0");
                         }
                         toatal_count = 0;
@@ -162,13 +164,13 @@ public class StorePriceFragment extends BaseFragment implements View.OnClickList
         };
         adapter2 = new MyBrandGridAdapter2(getActivity(), list_brand, click);
         brandRuleAdapter2 = new BrandRuleAdapter2(getActivity(), list_price);
-        for (int i = 0; i < tvIds.length; i++) {
-            textViews[i] = (TextView) findViewById(tvIds[i]);
-            textViews[i].setOnClickListener(this);
-        }
-        for (int i = 0; i < Id.length; i++) {
-            view_lines[i] = findViewById(Id[i]);
-        }
+//        for (int i = 0; i < tvIds.length; i++) {
+//            textViews[i] = (TextView) findViewById(tvIds[i]);
+//            textViews[i].setOnClickListener(this);
+//        }
+//        for (int i = 0; i < Id.length; i++) {
+//            view_lines[i] = findViewById(Id[i]);
+//        }
         getBrandType();
         gridView.setAdapter(adapter2);
         grid_price.setAdapter(brandRuleAdapter2);
@@ -279,13 +281,16 @@ public class StorePriceFragment extends BaseFragment implements View.OnClickList
             columnUtils_type = new ColumnUtils(getActivity(), new ColumnUtils.Result() {
                 @Override
                 public void onSuccess(String title, JSONArray jsonArray) {
+                    layout_parent_tv.removeAllViews();
                     for (int i = 0; i < jsonArray.length(); i++) {
                         try {
                             list_type.add(jsonArray.getJSONObject(i));
-                            if (i < 4) {
-                                textViews[i].setVisibility(View.VISIBLE);
-                                textViews[i].setText(list_type.get(i).getString("title"));
-                            }
+
+//                            if (i < 4) {
+//                                textViews[i].setVisibility(View.VISIBLE);
+//                                textViews[i].setText(list_type.get(i).getString("title"));
+//                            }
+                            addTv(list_type.get(i).getString("title"), i);
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -302,6 +307,36 @@ public class StorePriceFragment extends BaseFragment implements View.OnClickList
         if (list_type.size() == 0) {
             columnUtils_type.getColumn("", "Offline");
         }
+    }
+
+    /**
+     * 动态添加分类
+     */
+    private void addTv(String content, final int position) {
+        View view = LayoutInflater.from(getActivity()).inflate(R.layout.layout_store_price_tv_item, null);
+        TextView tv = (TextView) view.findViewById(R.id.tv_item);
+        View line = view.findViewById(R.id.line);
+        if (currentIndex == position) {
+            tv.setTextColor(ContextCompat.getColor(getActivity(), R.color.color_yellow));
+            line.setBackgroundColor(ContextCompat.getColor(getActivity(), R.color.color_yellow));
+        } else {
+            tv.setTextColor(ContextCompat.getColor(getActivity(), R.color.color_f5));
+            line.setBackgroundColor(ContextCompat.getColor(getActivity(), R.color.white));
+        }
+        tv.setText(content);
+//        view_lines[index].setBackgroundColor(ContextCompat.getColor(getActivity(), R.color.color_yellow));
+//        view_lines[currentIndex].setBackgroundColor(ContextCompat.getColor(getActivity(), R.color.white));
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                index = position;
+                if (currentIndex != index) {
+                    changeTab();
+                }
+            }
+        });
+        //添加控件
+        layout_parent_tv.addView(view);
     }
 
     @Override
@@ -346,10 +381,16 @@ public class StorePriceFragment extends BaseFragment implements View.OnClickList
             } catch (Exception e) {
 
             }
-            textViews[index].setTextColor(ContextCompat.getColor(getActivity(), R.color.color_yellow));
-            textViews[currentIndex].setTextColor(ContextCompat.getColor(getActivity(), R.color.color_f5));
-            view_lines[index].setBackgroundColor(ContextCompat.getColor(getActivity(), R.color.color_yellow));
-            view_lines[currentIndex].setBackgroundColor(ContextCompat.getColor(getActivity(), R.color.white));
+            View view = layout_parent_tv.getChildAt(index);
+            TextView tv = (TextView) view.findViewById(R.id.tv_item);
+            View line = view.findViewById(R.id.line);
+            tv.setTextColor(ContextCompat.getColor(getActivity(), R.color.color_yellow));
+            line.setBackgroundColor(ContextCompat.getColor(getActivity(), R.color.color_yellow));
+            View view2 = layout_parent_tv.getChildAt(currentIndex);
+            TextView tv2 = (TextView) view2.findViewById(R.id.tv_item);
+            View line2 = view2.findViewById(R.id.line);
+            tv2.setTextColor(ContextCompat.getColor(getActivity(), R.color.color_f5));
+            line2.setBackgroundColor(ContextCompat.getColor(getActivity(), R.color.white));
             currentIndex = index;
         }
     }
@@ -368,9 +409,9 @@ public class StorePriceFragment extends BaseFragment implements View.OnClickList
         try {
             jsonObject.put("device_id", MyApplication.getDeviceId());
             jsonObject.put("brand", brand);
-            if(StringUtils.isEmpty(class_id)){
-                if(list_type!=null&list_type.size()>0)
-                class_id = list_type.get(0).getString("id");
+            if (StringUtils.isEmpty(class_id)) {
+                if (list_type != null & list_type.size() > 0)
+                    class_id = list_type.get(0).getString("id");
             }
             jsonObject.put("class_id", class_id);//分类id
         } catch (JSONException e) {

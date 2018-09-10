@@ -1,220 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_parent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:id="@+id/layout_parent"
-    >
+    android:background="@color/white">
+
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <HorizontalScrollView
-        android:layout_marginTop="@dimen/x16"
-        android:scrollbars="none"
-        android:fillViewport="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
+        <HorizontalScrollView
             android:layout_width="match_parent"
-            android:layout_height="@dimen/x62"
-            android:layout_marginRight="@dimen/x12"
-            android:layout_marginLeft="@dimen/x12">
-
-            <GridView
-                android:horizontalSpacing="@dimen/x12"
-                android:id="@+id/grid"
-                android:layout_width="fill_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:numColumns="auto_fit"
-               ></GridView>
-        </LinearLayout>
-    </HorizontalScrollView>
-<View
-    android:layout_marginTop="@dimen/x16"
-    android:layout_width="match_parent"
-    android:layout_height="@dimen/x1"
-    android:background="@color/fontcolor_f2"
-    />
-    <LinearLayout
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/x72"
-        android:background="@color/white"
-        android:orientation="horizontal">
-
-        <TextView
-            android:visibility="invisible"
-            android:id="@+id/tv_1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="洗衣服"
-            android:textColor="@color/color_yellow"
-            android:textSize="@dimen/x24" />
-
-        <TextView
-            android:visibility="invisible"
-            android:id="@+id/tv_2"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="洗裤子"
-            android:textColor="@color/color_f5"
-            android:textSize="@dimen/x24" />
-
-        <TextView
-            android:visibility="invisible"
-            android:id="@+id/tv_3"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="洗鞋子"
-            android:textColor="@color/color_f5"
-            android:textSize="@dimen/x24" />
-
-        <TextView
-            android:visibility="invisible"
-            android:id="@+id/tv_4"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="洗其它"
-            android:textColor="@color/color_f5"
-            android:textSize="@dimen/x24" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/x3">
-
-        <View
-            android:id="@+id/line_1"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/x3"
-            android:layout_weight="1"
-            android:background="@color/color_yellow" />
-
-        <View
-            android:id="@+id/line_2"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/x3"
-            android:layout_weight="1"
-            android:background="@color/white" />
-
-        <View
-            android:id="@+id/line_3"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/x3"
-            android:layout_weight="1"
-            android:background="@color/white" />
-
-        <View
-            android:id="@+id/line_4"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/x3"
-            android:layout_weight="1"
-            android:background="@color/white" />
-    </LinearLayout>
-
-    <RelativeLayout
-        android:id="@+id/relayout_lan"
-        android:background="@mipmap/privce_bg"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/x56"
-        android:paddingLeft="@dimen/x12"
-        android:paddingRight="@dimen/x12">
-
-        <ImageView
-            android:id="@+id/img_lan"
-            android:layout_width="@dimen/x56"
-            android:layout_height="@dimen/x56"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="@dimen/x46"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
-            android:src="@mipmap/price_lan" />
-        <TextView
-            android:visibility="invisible"
-            android:id="@+id/tv_count"
-            android:textColor="@color/white"
-            android:textSize="@dimen/x20"
-            android:layout_alignParentTop="true"
-            android:background="@drawable/lan_circle"
-            android:text="1"
-            android:maxLength="2"
-            android:gravity="center"
-            android:layout_marginLeft="@dimen/x88"
-            android:layout_marginTop="@dimen/x6"
-            android:layout_width="@dimen/x28"
-            android:layout_height="@dimen/x28" />
-        <LinearLayout
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="@dimen/x16"
-            android:layout_toRightOf="@+id/img_lan"
-            android:gravity="bottom"
-            android:orientation="horizontal">
+            android:layout_marginTop="@dimen/x16"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x62"
+                android:layout_marginLeft="@dimen/x12"
+                android:layout_marginRight="@dimen/x12">
+
+                <GridView
+                    android:id="@+id/grid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:horizontalSpacing="@dimen/x12"
+                    android:numColumns="auto_fit"></GridView>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:layout_marginTop="@dimen/x16"
+            android:background="@color/fontcolor_f2" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/layout_parent_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:scrollbars="none">
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:id="@+id/relayout_lan"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x56"
+            android:background="@mipmap/privce_bg"
+            android:paddingLeft="@dimen/x12"
+            android:paddingRight="@dimen/x12">
+
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/img_lan"
+                android:layout_width="@dimen/x56"
+                android:layout_height="@dimen/x56"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/x46"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/price_lan" />
 
             <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="@dimen/x28"
+                android:layout_height="@dimen/x28"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/x88"
+                android:layout_marginTop="@dimen/x6"
+                android:background="@drawable/lan_circle"
+                android:gravity="center"
+                android:maxLength="2"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x20"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:visibility="invisible"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="预估费用："
-                android:textColor="#5f2915"
-                android:textSize="@dimen/x24" />
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x16"
+                android:layout_toRightOf="@+id/img_lan"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="预估费用："
+                    android:textColor="#5f2915"
+                    android:textSize="@dimen/x24" />
+
+                <TextView
+                    android:id="@+id/tv_prospectPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#df1714"
+                    android:textSize="@dimen/x28"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元"
+                    android:textColor="#df1714"
+                    android:textSize="@dimen/x14" />
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/tv_prospectPrice"
+                android:visibility="invisible"
+                android:id="@+id/tv_artical"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0"
-                android:textColor="#df1714"
-                android:textSize="@dimen/x28"
-                android:textStyle="bold" />
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/x34"
+                android:text="什么是预估费用？"
+                android:textColor="#5f2815"
+                android:textSize="@dimen/x20" />
+        </RelativeLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="元"
-                android:textColor="#df1714"
-                android:textSize="@dimen/x14" />
-        </LinearLayout>
-
-        <TextView
-            android:paddingLeft="@dimen/x34"
-            android:id="@+id/tv_artical"
-            android:layout_width="wrap_content"
+        <GridView
+            android:id="@+id/grid_price"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:text="什么是预估费用？"
-            android:textColor="#5f2815"
-            android:textSize="@dimen/x20" />
-    </RelativeLayout>
-<GridView
-    android:layout_marginTop="@dimen/x12"
-    android:id="@+id/grid_price"
-    android:background="@color/fontcolor_f2"
-    android:horizontalSpacing="@dimen/x1"
-    android:verticalSpacing="@dimen/x1"
-    android:numColumns="3"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"></GridView>
+            android:layout_marginTop="@dimen/x12"
+            android:background="@color/fontcolor_f2"
+            android:horizontalSpacing="@dimen/x1"
+            android:numColumns="3"
+            android:verticalSpacing="@dimen/x1"></GridView>
     </LinearLayout>
+
     <View
-        android:visibility="gone"
         android:id="@+id/view_zhezhao"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#4d000000"
-        />
+        android:visibility="gone" />
 </RelativeLayout>

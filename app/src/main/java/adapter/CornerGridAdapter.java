@@ -7,6 +7,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.media.MediaMetadataRetriever;
 import android.os.Environment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -82,7 +83,7 @@ public class CornerGridAdapter extends BaseAdapter {
                 //视屏tupian
                 if (list_video.get(position-list.size()) != null) {
                     String path = RequestTag.BaseVieoUrl+list_video.get(position - list.size());
-                    String s = path.substring(path.length()-RequestTag.BaseVieoUrl.length(),path.length()-4)+".mp4";
+                    String s = path.substring(path.length()-7,path.length()-4)+".mp4";
                     if(fileIsExists(Environment.getExternalStorageDirectory()+ "/Download/video/"+s)){
                        holder.myImage.setImageDrawable(getNetVideoBitmap(Environment.getExternalStorageDirectory()+ "/Download/video/"+s));
                        // holder.myImage.setImageResource(R.mipmap.default_iv);
@@ -128,6 +129,7 @@ public class CornerGridAdapter extends BaseAdapter {
                 @Override
                 public void onClick(View v) {
 //                    ((BaseActivity) context).startActivity_ImagrPager(context, position, list, false);
+                    Log.d("uoqowoertoiw",RequestTag.BaseVieoUrl+list_video.get(position - list.size()));
                     context.startActivity(new Intent(context, VideoPlayActivity.class).putExtra("path_video",RequestTag.BaseVieoUrl+list_video.get(position - list.size())));
                 }
             });

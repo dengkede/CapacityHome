@@ -11,6 +11,7 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.administrator.capacityhome.MyApplication;
 import com.example.administrator.capacityhome.R;
@@ -174,13 +175,14 @@ public class FeedDetailAdapter2 extends BaseAdapter {
                 }
                 if (!StringUtils.isEmpty(list.get(position).getString("pics")) && !list.get(position).getString("pics").equals("null")) {
                     holder1.tv_file.setVisibility(View.VISIBLE);
+
                     //Toast.makeText(context,list.get(position).getString("pics"),Toast.LENGTH_LONG).show();
                     ArrayList<String> lists = new ArrayList<>();
                     for (int i = 0; i < list.get(position).getString("pics").split(",").length; i++) {
                         lists.add(list.get(position).getString("pics").split(",")[i]);
                     }
-                    if(!StringUtils.isEmpty(list.get(position).getString("videos"))){
-                        for (int i = 0;i<list.get(position).getString("videos").length();i++){
+                    if(!StringUtils.isEmpty(list.get(position).getString("videos"))&&!list.get(position).getString("videos").equals("null")){
+                        for (int i = 0;i<list.get(position).getString("videos").split(",").length;i++){
                             lists.add(list.get(position).getString("videos").split(",")[i]);
                         }
                     }
@@ -189,8 +191,14 @@ public class FeedDetailAdapter2 extends BaseAdapter {
 
                 } else {
                     if(!StringUtils.isEmpty(list.get(position).getString("videos")) && !list.get(position).getString("videos").equals("null")){
-                        holder1.tv_file.setVisibility(View.VISIBLE);
+                        ArrayList<String> lists = new ArrayList<>();
+                        if(!StringUtils.isEmpty(list.get(position).getString("videos"))){
+                            for (int i = 0;i<list.get(position).getString("videos").split(",").length;i++){
+                                lists.add(list.get(position).getString("videos").split(",")[i]);
+                            }
+                        }
                         holder1.tv_feedback_gridFile.setVisibility(View.VISIBLE);
+                        holder1.tv_feedback_gridFile.setAdapter(new FeedDetailGridAdapter(lists, context));
                     }else {
                         holder1.tv_file.setVisibility(View.GONE);
                         holder1.tv_feedback_gridFile.setVisibility(View.GONE);
@@ -229,8 +237,8 @@ public class FeedDetailAdapter2 extends BaseAdapter {
                     for (int i = 0; i < list.get(position).getString("pics").split(",").length; i++) {
                         lists.add(list.get(position).getString("pics").split(",")[i]);
                     }
-                    if(!StringUtils.isEmpty(list.get(position).getString("videos"))){
-                        for (int i = 0;i<list.get(position).getString("videos").length();i++){
+                    if(!StringUtils.isEmpty(list.get(position).getString("videos"))&&!list.get(position).getString("videos").equals("null")){
+                        for (int i = 0;i<list.get(position).getString("videos").split(",").length;i++){
                             lists.add(list.get(position).getString("videos").split(",")[i]);
                         }
                     }
@@ -239,11 +247,19 @@ public class FeedDetailAdapter2 extends BaseAdapter {
 
                 } else {
                     if(!StringUtils.isEmpty(list.get(position).getString("videos")) && !list.get(position).getString("videos").equals("null")){
-                        holder1.tv_file.setVisibility(View.VISIBLE);
-                        holder1.tv_feedback_gridFile.setVisibility(View.VISIBLE);
+                        holder2.tv_file.setVisibility(View.VISIBLE);
+                        holder2.tv_feedback_gridFile.setVisibility(View.VISIBLE);
+                        ArrayList<String> lists = new ArrayList<>();
+                        if(!StringUtils.isEmpty(list.get(position).getString("videos"))){
+                            for (int i = 0;i<list.get(position).getString("videos").split(",").length;i++){
+                                lists.add(list.get(position).getString("videos").split(",")[i]);
+                            }
+                        }
+                        holder2.tv_feedback_gridFile.setVisibility(View.VISIBLE);
+                        holder2.tv_feedback_gridFile.setAdapter(new FeedDetailGridAdapter(lists, context));
                     }else {
-                        holder1.tv_file.setVisibility(View.GONE);
-                        holder1.tv_feedback_gridFile.setVisibility(View.GONE);
+                        holder2.tv_file.setVisibility(View.GONE);
+                        holder2.tv_feedback_gridFile.setVisibility(View.GONE);
                     }
 //                    holder2.tv_file.setVisibility(View.GONE);
 //                    holder2.tv_feedback_gridFile.setVisibility(View.GONE);

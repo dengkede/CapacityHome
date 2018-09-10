@@ -95,6 +95,7 @@
             android:orientation="horizontal">
 
             <LinearLayout
+                android:visibility="gone"
                 android:id="@+id/layout_createRandomCode"
                 android:gravity="center"
                 android:layout_width="0dp"

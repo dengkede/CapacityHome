@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.administrator.capacityhome.BaseActivity;
 import com.example.administrator.capacityhome.MyApplication;
@@ -63,7 +64,7 @@ public class RecommendAdv_evaluateAdapter extends PagerAdapter {
     }
 
     @Override
-    public Object instantiateItem(ViewGroup container, int position) {
+    public Object instantiateItem(ViewGroup container, final int position) {
         View layout = inflater.inflate(R.layout.layout_allevaluate_item, null);
         final ImageView imageView = (ImageView) layout.findViewById(R.id.img_user);
         TextView tv_name = (TextView) layout.findViewById(R.id.tv_name);
@@ -76,8 +77,8 @@ public class RecommendAdv_evaluateAdapter extends PagerAdapter {
 //            imageView.setImageResource(R.mipmap.img_user);
 //        }
         try {
-            if (!StringUtils.isEmpty(imgUrl.get(position).getString("name"))) {
-                tv_name.setText(imgUrl.get(position).getString("name"));
+            if (!StringUtils.isEmpty(imgUrl.get(position).getString("nickname"))) {
+                tv_name.setText(imgUrl.get(position).getString("nickname"));
             } else {
                 tv_name.setText(imgUrl.get(position).getString("未设置"));
             }
@@ -118,6 +119,25 @@ public class RecommendAdv_evaluateAdapter extends PagerAdapter {
 //        }catch (Exception e){
 //
 //        }
+        layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                try {
+                    if(StringUtils.isEmpty(imgUrl.get(position).getString("pics"))||imgUrl.get(position).getString("pics").equals("null")){
+                        Toast.makeText(context,"没有图片",Toast.LENGTH_SHORT).show();
+                    }else {
+                        ArrayList<String> lists = new ArrayList<>();
+                        for (int i = 0; i < imgUrl.get(position).getString("pics").split(",").length; i++) {
+                            lists.add(imgUrl.get(position).getString("pics").split(",")[i]);
+                        }
+                        ((BaseActivity) context).startActivity_ImagrPager(context, 0, lists, false);
+                    }
+                }catch (Exception e){
+
+                }
+            }
+        });
         return layout;
 
     }
@@ -151,7 +171,7 @@ public class RecommendAdv_evaluateAdapter extends PagerAdapter {
 //
 //                0, 7, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
-            string.setSpan(new MyClickText(context, click), string.length() - s.length() + 1, string.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+            string.setSpan(new MyClickText(context, click),  s.length(), string.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
             tv.setMovementMethod(LinkMovementMethod.getInstance());//不设置 没有点击事件
             string.setSpan(
 

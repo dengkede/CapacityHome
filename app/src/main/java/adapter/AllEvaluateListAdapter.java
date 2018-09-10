@@ -72,8 +72,8 @@ public class AllEvaluateListAdapter extends BaseAdapter {
             holder = (ViewHolder) convertView.getTag();
         }
         try {
-            if (!StringUtils.isEmpty(list.get(position).getString("name"))) {
-                holder.tv_name.setText(list.get(position).getString("name"));
+            if (!StringUtils.isEmpty(list.get(position).getString("nickname"))) {
+                holder.tv_name.setText(list.get(position).getString("nickname"));
             } else {
                 holder.tv_name.setText(list.get(position).getString("未设置"));
             }

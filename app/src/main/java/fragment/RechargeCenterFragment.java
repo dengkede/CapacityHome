@@ -654,10 +654,11 @@ public class RechargeCenterFragment extends BaseFragment implements View.OnClick
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == 2) {
-            quary_money();
-        } else if (requestCode == 4) {
+        if (requestCode == 4) {
             quary_money();
         }
+// else if (requestCode == 2) {
+//            quary_money();
+//        }
     }
 }

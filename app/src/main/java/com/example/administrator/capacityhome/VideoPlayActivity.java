@@ -75,7 +75,7 @@ public class VideoPlayActivity extends BaseActivity {
         });
         //View view = LayoutInflater.from(this).inflate(jzVideoPlayerStandard.getLayoutId(),null);
         //"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
-        String s = path.substring(path.length()-RequestTag.BaseVieoUrl.length(),path.length()-4)+".mp4";
+        String s = path.substring(path.length()-7,path.length()-4)+".mp4";
         if(fileIsExists(getSaveFilePath()+s)){
             showLoadingView();
             jzVideoPlayerStandard.setUp(getSaveFilePath()+s,
@@ -89,6 +89,7 @@ public class VideoPlayActivity extends BaseActivity {
             dismissLoadingView();
             jzVideoPlayerStandard.setVisibility(View.VISIBLE);
         }else {
+            Log.d("uoqowoertoiw",path);
             ss(path);
 
         }
@@ -197,7 +198,7 @@ public class VideoPlayActivity extends BaseActivity {
      */
     private void downVideo(final String path){
 
-        MyOkHttp.get().download(this, path, getSaveFilePath(), path.substring(path.length()-RequestTag.BaseVieoUrl.length(),path.length()-4)+".mp4", new DownloadResponseHandler() {
+        MyOkHttp.get().download(this, path, getSaveFilePath(), path.substring(path.length()-7,path.length()-4)+".mp4", new DownloadResponseHandler() {
             @Override
             public void onFinish(File download_file) {
             //   aCache.put(path + "video.mp4",path + "video.mp4");
@@ -208,7 +209,7 @@ public class VideoPlayActivity extends BaseActivity {
                             "");
                     getNetVideoBitmap(download_file.getAbsolutePath());
                 }catch (Exception e){
-                  deleteFile(new File(getSaveFilePath()+path.substring(path.length()-RequestTag.BaseVieoUrl.length(),path.length()-4)+".mp4"));
+                  deleteFile(new File(getSaveFilePath()+path.substring(path.length()-7,path.length()-4)+".mp4"));
                 }
                 jzVideoPlayerStandard.setVisibility(View.VISIBLE);
             }
@@ -217,7 +218,7 @@ public class VideoPlayActivity extends BaseActivity {
             public void onProgress(final long currentBytes, final long totalBytes) {
                 Log.d("path",currentBytes/totalBytes+"");
                 if(totalBytes<=1024){
-                    deleteFile(new File(getSaveFilePath()+path.substring(path.length()-RequestTag.BaseVieoUrl.length(),path.length()-4)+".mp4"));
+                    deleteFile(new File(getSaveFilePath()+path.substring(path.length()-7,path.length()-4)+".mp4"));
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
@@ -241,8 +242,9 @@ public class VideoPlayActivity extends BaseActivity {
             public void onFailure(String error_msg) {
                 popupWindow_down.dismiss();
                 jzVideoPlayerStandard.setVisibility(View.VISIBLE);
-                deleteFile(new File(getSaveFilePath()+path.substring(path.length()-RequestTag.BaseVieoUrl.length(),path.length()-4)+".mp4"));
+                deleteFile(new File(getSaveFilePath()+path.substring(path.length()-7,path.length()-4)+".mp4"));
                 toastMessage("视屏加载失败，请稍后重试。");
+                Log.d("uoqowoertoiw",error_msg);
             }
         });
     }

@@ -170,11 +170,11 @@ public class FeedDetailAdapter extends BaseAdapter {
                     for (int i = 0;i<list.get(position).getString("pics").split(",").length;i++){
                         lists.add(list.get(position).getString("pics").split(",")[i]);
                     }
-                    if(!StringUtils.isEmpty(list.get(position).getString("videos"))){
-                        for (int i = 0;i<list.get(position).getString("videos").length();i++){
-                            lists.add(list.get(position).getString("videos").split(",")[i]);
-                        }
-                    }
+//                    if(!StringUtils.isEmpty(list.get(position).getString("videos"))){
+//                        for (int i = 0;i<list.get(position).getString("videos").length();i++){
+//                            lists.add(list.get(position).getString("videos").split(",")[i]);
+//                        }
+//                    }
 
                     holder1.tv_feedback_gridFile.setVisibility(View.VISIBLE);
                     holder1.tv_feedback_gridFile.setAdapter(new FeedDetailGridAdapter(lists, context));
@@ -254,11 +254,11 @@ public class FeedDetailAdapter extends BaseAdapter {
                     for (int i = 0;i<list.get(position).getString("pics").split(",").length;i++){
                         lists.add(list.get(position).getString("pics").split(",")[i]);
                     }
-                    if(!StringUtils.isEmpty(list.get(position).getString("videos"))){
-                        for (int i = 0;i<list.get(position).getString("videos").length();i++){
-                            lists.add(list.get(position).getString("videos").split(",")[i]);
-                        }
-                    }
+//                    if(!StringUtils.isEmpty(list.get(position).getString("videos"))){
+//                        for (int i = 0;i<list.get(position).getString("videos").length();i++){
+//                            lists.add(list.get(position).getString("videos").split(",")[i]);
+//                        }
+//                    }
                     holder2.tv_feedback_gridFile.setVisibility(View.VISIBLE);
                     holder2.tv_feedback_gridFile.setAdapter(new FeedDetailGridAdapter(lists, context));
 

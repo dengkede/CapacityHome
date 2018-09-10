@@ -19,7 +19,7 @@
     <GridView
         android:id="@+id/listview_likeBrand"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/x68"
         android:layout_marginLeft="@dimen/x36"
         android:layout_marginRight="@dimen/x36"
         android:horizontalSpacing="@dimen/x12"
@@ -29,7 +29,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/x36"
+        android:layout_marginTop="@dimen/x20"
         android:gravity="center"
         android:text="下单时默认使用您当前选择的洗衣品牌"
         android:textColor="@color/fontcolor_f9"
